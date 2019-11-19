@@ -14,6 +14,7 @@
 		E8582D3B238415F4006D2406 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8582D3A238415F4006D2406 /* Assets.xcassets */; };
 		E8582D3E238415F4006D2406 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8582D3C238415F4006D2406 /* LaunchScreen.storyboard */; };
 		E8582D49238415F4006D2406 /* learning_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D48238415F4006D2406 /* learning_iosTests.swift */; };
+		E8582D582384181F006D2406 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D562384181F006D2406 /* CounterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		E8582D44238415F4006D2406 /* learning-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "learning-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8582D48238415F4006D2406 /* learning_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = learning_iosTests.swift; sourceTree = "<group>"; };
 		E8582D4A238415F4006D2406 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8582D562384181F006D2406 /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CounterViewController.swift; path = ../CounterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		E8582D30238415F3006D2406 /* learning-ios */ = {
 			isa = PBXGroup;
 			children = (
+				E8582D53238416DC006D2406 /* counter */,
 				E8582D31238415F3006D2406 /* AppDelegate.swift */,
 				E8582D33238415F3006D2406 /* SceneDelegate.swift */,
 				E8582D35238415F3006D2406 /* ViewController.swift */,
@@ -97,6 +100,14 @@
 				E8582D4A238415F4006D2406 /* Info.plist */,
 			);
 			path = "learning-iosTests";
+			sourceTree = "<group>";
+		};
+		E8582D53238416DC006D2406 /* counter */ = {
+			isa = PBXGroup;
+			children = (
+				E8582D562384181F006D2406 /* CounterViewController.swift */,
+			);
+			path = counter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8582D36238415F3006D2406 /* ViewController.swift in Sources */,
+				E8582D582384181F006D2406 /* CounterViewController.swift in Sources */,
 				E8582D32238415F3006D2406 /* AppDelegate.swift in Sources */,
 				E8582D34238415F3006D2406 /* SceneDelegate.swift in Sources */,
 			);

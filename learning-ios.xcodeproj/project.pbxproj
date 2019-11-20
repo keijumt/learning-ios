@@ -15,6 +15,14 @@
 		E8582D3E238415F4006D2406 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8582D3C238415F4006D2406 /* LaunchScreen.storyboard */; };
 		E8582D49238415F4006D2406 /* learning_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D48238415F4006D2406 /* learning_iosTests.swift */; };
 		E8582D582384181F006D2406 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D562384181F006D2406 /* CounterViewController.swift */; };
+		E8582D6C23855864006D2406 /* CounterMvvmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D6B23855864006D2406 /* CounterMvvmViewController.swift */; };
+		E8582D6F23855E04006D2406 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8582D6E23855E04006D2406 /* RxRelay.framework */; };
+		E8582D7023855E04006D2406 /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E8582D6E23855E04006D2406 /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E8582D7323855E1C006D2406 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8582D7223855E1C006D2406 /* RxSwift.framework */; };
+		E8582D7423855E1C006D2406 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E8582D7223855E1C006D2406 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E8582D7623855E29006D2406 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8582D7523855E29006D2406 /* RxCocoa.framework */; };
+		E8582D7723855E29006D2406 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E8582D7523855E29006D2406 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E8582D7A23855EC8006D2406 /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D7923855EC8006D2406 /* CounterViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +34,22 @@
 			remoteInfo = "learning-ios";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E8582D7123855E04006D2406 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E8582D7723855E29006D2406 /* RxCocoa.framework in Embed Frameworks */,
+				E8582D7423855E1C006D2406 /* RxSwift.framework in Embed Frameworks */,
+				E8582D7023855E04006D2406 /* RxRelay.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E8582D2E238415F3006D2406 /* learning-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "learning-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +64,11 @@
 		E8582D48238415F4006D2406 /* learning_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = learning_iosTests.swift; sourceTree = "<group>"; };
 		E8582D4A238415F4006D2406 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8582D562384181F006D2406 /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CounterViewController.swift; path = ../CounterViewController.swift; sourceTree = "<group>"; };
+		E8582D6B23855864006D2406 /* CounterMvvmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterMvvmViewController.swift; sourceTree = "<group>"; };
+		E8582D6E23855E04006D2406 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
+		E8582D7223855E1C006D2406 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		E8582D7523855E29006D2406 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		E8582D7923855EC8006D2406 /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +76,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8582D7623855E29006D2406 /* RxCocoa.framework in Frameworks */,
+				E8582D7323855E1C006D2406 /* RxSwift.framework in Frameworks */,
+				E8582D6F23855E04006D2406 /* RxRelay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +98,7 @@
 				E8582D30238415F3006D2406 /* learning-ios */,
 				E8582D47238415F4006D2406 /* learning-iosTests */,
 				E8582D2F238415F3006D2406 /* Products */,
+				E8582D6D23855E03006D2406 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +114,7 @@
 		E8582D30238415F3006D2406 /* learning-ios */ = {
 			isa = PBXGroup;
 			children = (
+				E8582D6A23855849006D2406 /* counter-mvvm */,
 				E8582D53238416DC006D2406 /* counter */,
 				E8582D31238415F3006D2406 /* AppDelegate.swift */,
 				E8582D33238415F3006D2406 /* SceneDelegate.swift */,
@@ -110,6 +144,25 @@
 			path = counter;
 			sourceTree = "<group>";
 		};
+		E8582D6A23855849006D2406 /* counter-mvvm */ = {
+			isa = PBXGroup;
+			children = (
+				E8582D6B23855864006D2406 /* CounterMvvmViewController.swift */,
+				E8582D7923855EC8006D2406 /* CounterViewModel.swift */,
+			);
+			path = "counter-mvvm";
+			sourceTree = "<group>";
+		};
+		E8582D6D23855E03006D2406 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8582D7523855E29006D2406 /* RxCocoa.framework */,
+				E8582D7223855E1C006D2406 /* RxSwift.framework */,
+				E8582D6E23855E04006D2406 /* RxRelay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -120,6 +173,8 @@
 				E8582D2A238415F3006D2406 /* Sources */,
 				E8582D2B238415F3006D2406 /* Frameworks */,
 				E8582D2C238415F3006D2406 /* Resources */,
+				E8582D7123855E04006D2406 /* Embed Frameworks */,
+				E8582D7823855E45006D2406 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -206,6 +261,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E8582D7823855E45006D2406 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E8582D2A238415F3006D2406 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -213,8 +291,10 @@
 			files = (
 				E8582D36238415F3006D2406 /* ViewController.swift in Sources */,
 				E8582D582384181F006D2406 /* CounterViewController.swift in Sources */,
+				E8582D6C23855864006D2406 /* CounterMvvmViewController.swift in Sources */,
 				E8582D32238415F3006D2406 /* AppDelegate.swift in Sources */,
 				E8582D34238415F3006D2406 /* SceneDelegate.swift in Sources */,
+				E8582D7A23855EC8006D2406 /* CounterViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +456,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3PR488S28M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "learning-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -395,6 +479,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3PR488S28M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "learning-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (

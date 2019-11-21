@@ -16,12 +16,13 @@ class CounterMvvmViewController: UIViewController {
     @IBOutlet weak var countLabel: UILabel!
     
     private let disposeBag = DisposeBag()
+    private var viewModel: CounterViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         let input = CounterInput(didTapButton: countButton.rx.tap.asObservable())
-        let viewModel = CounterViewModel()
+        self.viewModel = CounterViewModel()
         let output = viewModel.transform(input: input)
         output.count.drive(self.countLabel.rx.text).disposed(by: disposeBag)
     }

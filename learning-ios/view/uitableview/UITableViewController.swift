@@ -9,15 +9,18 @@
 import UIKit
 
 class UITableViewController: UIViewController {
-
+    
     @IBOutlet weak var tableView: UITableView!
-    private var items: [String] = (1...50).map { "item\($0)" }
+    private var items: [String] = (1...50).map { "title\($0)" }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
+        self.tableView.estimatedRowHeight = 180
+        self.tableView.rowHeight = UITableView.automaticDimension
+        self.tableView.register(UINib(nibName: "ExampleUITableViewCell", bundle: nil), forCellReuseIdentifier: "ExampleUITableViewCell")
     }
 }
 
@@ -26,8 +29,8 @@ extension  UITableViewController: UITableViewDelegate {
         print(items[indexPath.row])
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
 }
 
@@ -37,8 +40,8 @@ extension UITableViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = items[indexPath.row]
+        let cell = self.tableView.dequeueReusableCell(withIdentifier: "ExampleUITableViewCell", for: indexPath) as! ExampleUITableViewCell
+        cell.set(item: items[indexPath.row])
         return cell
     }
 }

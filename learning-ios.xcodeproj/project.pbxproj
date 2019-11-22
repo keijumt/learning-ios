@@ -25,6 +25,8 @@
 		E8582D7A23855EC8006D2406 /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D7923855EC8006D2406 /* CounterViewModel.swift */; };
 		E8582D7E23880519006D2406 /* UITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D7D23880519006D2406 /* UITableViewController.swift */; };
 		E8582D802388052A006D2406 /* UiTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D7F2388052A006D2406 /* UiTableViewModel.swift */; };
+		E8582D83238811A8006D2406 /* ExampleUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D81238811A8006D2406 /* ExampleUITableViewCell.swift */; };
+		E8582D84238811A8006D2406 /* ExampleUITableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8582D82238811A8006D2406 /* ExampleUITableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		E8582D7923855EC8006D2406 /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
 		E8582D7D23880519006D2406 /* UITableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewController.swift; sourceTree = "<group>"; };
 		E8582D7F2388052A006D2406 /* UiTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiTableViewModel.swift; sourceTree = "<group>"; };
+		E8582D81238811A8006D2406 /* ExampleUITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITableViewCell.swift; sourceTree = "<group>"; };
+		E8582D82238811A8006D2406 /* ExampleUITableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleUITableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +185,8 @@
 			children = (
 				E8582D7D23880519006D2406 /* UITableViewController.swift */,
 				E8582D7F2388052A006D2406 /* UiTableViewModel.swift */,
+				E8582D81238811A8006D2406 /* ExampleUITableViewCell.swift */,
+				E8582D82238811A8006D2406 /* ExampleUITableViewCell.xib */,
 			);
 			path = uitableview;
 			sourceTree = "<group>";
@@ -268,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8582D84238811A8006D2406 /* ExampleUITableViewCell.xib in Resources */,
 				E8582D3E238415F4006D2406 /* LaunchScreen.storyboard in Resources */,
 				E8582D3B238415F4006D2406 /* Assets.xcassets in Resources */,
 				E8582D39238415F3006D2406 /* Main.storyboard in Resources */,
@@ -311,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8582D83238811A8006D2406 /* ExampleUITableViewCell.swift in Sources */,
 				E8582D7E23880519006D2406 /* UITableViewController.swift in Sources */,
 				E8582D36238415F3006D2406 /* ViewController.swift in Sources */,
 				E8582D582384181F006D2406 /* CounterViewController.swift in Sources */,

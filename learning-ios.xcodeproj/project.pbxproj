@@ -23,6 +23,8 @@
 		E8582D7623855E29006D2406 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8582D7523855E29006D2406 /* RxCocoa.framework */; };
 		E8582D7723855E29006D2406 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E8582D7523855E29006D2406 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E8582D7A23855EC8006D2406 /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D7923855EC8006D2406 /* CounterViewModel.swift */; };
+		E8582D7E23880519006D2406 /* UITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D7D23880519006D2406 /* UITableViewController.swift */; };
+		E8582D802388052A006D2406 /* UiTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D7F2388052A006D2406 /* UiTableViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		E8582D7223855E1C006D2406 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		E8582D7523855E29006D2406 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		E8582D7923855EC8006D2406 /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
+		E8582D7D23880519006D2406 /* UITableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewController.swift; sourceTree = "<group>"; };
+		E8582D7F2388052A006D2406 /* UiTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiTableViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,7 @@
 		E8582D30238415F3006D2406 /* learning-ios */ = {
 			isa = PBXGroup;
 			children = (
+				E8582D7B238804F2006D2406 /* view */,
 				E8582D6A23855849006D2406 /* counter-mvvm */,
 				E8582D53238416DC006D2406 /* counter */,
 				E8582D31238415F3006D2406 /* AppDelegate.swift */,
@@ -161,6 +166,23 @@
 				E8582D6E23855E04006D2406 /* RxRelay.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8582D7B238804F2006D2406 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E8582D7C238804FF006D2406 /* uitableview */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		E8582D7C238804FF006D2406 /* uitableview */ = {
+			isa = PBXGroup;
+			children = (
+				E8582D7D23880519006D2406 /* UITableViewController.swift */,
+				E8582D7F2388052A006D2406 /* UiTableViewModel.swift */,
+			);
+			path = uitableview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,8 +311,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8582D7E23880519006D2406 /* UITableViewController.swift in Sources */,
 				E8582D36238415F3006D2406 /* ViewController.swift in Sources */,
 				E8582D582384181F006D2406 /* CounterViewController.swift in Sources */,
+				E8582D802388052A006D2406 /* UiTableViewModel.swift in Sources */,
 				E8582D6C23855864006D2406 /* CounterMvvmViewController.swift in Sources */,
 				E8582D32238415F3006D2406 /* AppDelegate.swift in Sources */,
 				E8582D34238415F3006D2406 /* SceneDelegate.swift in Sources */,

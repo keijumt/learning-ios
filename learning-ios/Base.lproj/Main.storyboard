@@ -31,6 +31,14 @@
                                     <segue destination="Alp-Pc-290" kind="show" id="r68-Az-rX3"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MF2-Du-W9E">
+                                <rect key="frame" x="20" y="120" width="84" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="UiTableView"/>
+                                <connections>
+                                    <segue destination="OcH-9f-RpL" kind="show" id="zuV-Sp-u7u"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -79,6 +87,32 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uvc-rr-AaO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="997" y="139"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="cij-J4-qtQ">
+            <objects>
+                <viewController id="OcH-9f-RpL" customClass="UITableViewController" customModule="learning_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HVg-HH-My8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rCi-Rg-b3z">
+                                <rect key="frame" x="20" y="20" width="374" height="788"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="2F7-EW-Ncd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eet-Q7-5et"/>
+                    <connections>
+                        <outlet property="tableView" destination="rCi-Rg-b3z" id="NwY-aV-9tI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="98I-PC-UPp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10.144927536231885" y="867.85714285714278"/>
         </scene>
         <!--Counter Mvvm View Controller-->
         <scene sceneID="Ole-72-efD">

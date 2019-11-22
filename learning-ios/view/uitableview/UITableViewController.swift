@@ -17,6 +17,17 @@ class UITableViewController: UIViewController {
         super.viewDidLoad()
         
         self.tableView.dataSource = self
+        self.tableView.delegate = self
+    }
+}
+
+extension  UITableViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(items[indexPath.row])
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
     }
 }
 

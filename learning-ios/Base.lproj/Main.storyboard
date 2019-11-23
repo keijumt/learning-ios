@@ -29,6 +29,13 @@
                                     <segue destination="OcH-9f-RpL" kind="show" id="zuV-Sp-u7u"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmb-TD-VXo">
+                                <rect key="frame" x="20" y="178" width="86" height="30"/>
+                                <state key="normal" title="GithubClient"/>
+                                <connections>
+                                    <segue destination="3yr-rq-AcR" kind="show" id="iGX-j8-ijW"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mB0-4R-kMv">
                                 <rect key="frame" x="20" y="64" width="56" height="30"/>
                                 <state key="normal" title="Counter"/>
@@ -43,8 +50,10 @@
                             <constraint firstItem="mB0-4R-kMv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="N7f-xf-FIt"/>
                             <constraint firstItem="mB0-4R-kMv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="l10-76-fOs"/>
                             <constraint firstItem="MF2-Du-W9E" firstAttribute="top" secondItem="tzD-2c-tXT" secondAttribute="bottom" constant="8" id="m82-oY-47K"/>
+                            <constraint firstItem="kmb-TD-VXo" firstAttribute="top" secondItem="MF2-Du-W9E" secondAttribute="bottom" constant="8" id="mIK-8s-5iF"/>
                             <constraint firstItem="tzD-2c-tXT" firstAttribute="top" secondItem="mB0-4R-kMv" secondAttribute="bottom" constant="8" id="o2P-mA-faw"/>
                             <constraint firstItem="MF2-Du-W9E" firstAttribute="leading" secondItem="tzD-2c-tXT" secondAttribute="leading" id="vsh-Xp-8H8"/>
+                            <constraint firstItem="kmb-TD-VXo" firstAttribute="leading" secondItem="MF2-Du-W9E" secondAttribute="leading" id="wNb-9z-D6M"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -287,6 +296,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lKu-Ou-9P5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-12" y="-535"/>
+        </scene>
+        <!--Github Client View Controller-->
+        <scene sceneID="p3Z-Hw-n9f">
+            <objects>
+                <viewController id="3yr-rq-AcR" customClass="GithubClientViewController" customModule="learning_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lZn-Cf-GGo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Djx-xe-6L5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BbI-fv-hsH" firstAttribute="trailing" secondItem="Djx-xe-6L5" secondAttribute="trailing" id="2xh-JB-F6e"/>
+                            <constraint firstItem="BbI-fv-hsH" firstAttribute="trailing" secondItem="Djx-xe-6L5" secondAttribute="trailing" id="70X-rv-YX7"/>
+                            <constraint firstItem="Djx-xe-6L5" firstAttribute="top" secondItem="BbI-fv-hsH" secondAttribute="top" id="RE1-TH-Cuy"/>
+                            <constraint firstItem="Djx-xe-6L5" firstAttribute="leading" secondItem="BbI-fv-hsH" secondAttribute="leading" id="RqD-vB-cZW"/>
+                            <constraint firstItem="Djx-xe-6L5" firstAttribute="leading" secondItem="BbI-fv-hsH" secondAttribute="leading" id="kNg-V4-JlS"/>
+                            <constraint firstItem="BbI-fv-hsH" firstAttribute="bottom" secondItem="Djx-xe-6L5" secondAttribute="bottom" id="muQ-0E-bl2"/>
+                            <constraint firstItem="Djx-xe-6L5" firstAttribute="top" secondItem="BbI-fv-hsH" secondAttribute="top" id="ucQ-Oh-Xvk"/>
+                            <constraint firstItem="BbI-fv-hsH" firstAttribute="bottom" secondItem="Djx-xe-6L5" secondAttribute="bottom" id="xWP-y8-qrl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BbI-fv-hsH"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iiP-HD-gGX"/>
+                    <connections>
+                        <outlet property="tableView" destination="Djx-xe-6L5" id="lMn-pg-JML"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sPD-jh-JnX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1013" y="868"/>
         </scene>
     </scenes>
     <resources>

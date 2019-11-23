@@ -21,6 +21,6 @@ class ExampleUITableViewCell: UITableViewCell {
     }
 
     func set(item: String){
-        self.titleLabel?.text = item
+        self.titleLabel.text = item
     }
 }

@@ -27,6 +27,20 @@
 		E8582D802388052A006D2406 /* UiTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D7F2388052A006D2406 /* UiTableViewModel.swift */; };
 		E8582D83238811A8006D2406 /* ExampleUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D81238811A8006D2406 /* ExampleUITableViewCell.swift */; };
 		E8582D84238811A8006D2406 /* ExampleUITableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8582D82238811A8006D2406 /* ExampleUITableViewCell.xib */; };
+		E8582D8B23893696006D2406 /* GithubClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D8A23893696006D2406 /* GithubClientViewController.swift */; };
+		E8582D8D23893713006D2406 /* GithubClientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D8C23893713006D2406 /* GithubClientViewModel.swift */; };
+		E8582D8F23893783006D2406 /* RepoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D8E23893783006D2406 /* RepoRepository.swift */; };
+		E8582D912389554F006D2406 /* GithubApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D902389554F006D2406 /* GithubApi.swift */; };
+		E8582D932389555B006D2406 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D922389555B006D2406 /* Repo.swift */; };
+		E8582D952389558E006D2406 /* APIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E8582D942389558E006D2406 /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E8582D97238955EF006D2406 /* SearchRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D96238955EF006D2406 /* SearchRepo.swift */; };
+		E8582D992389561D006D2406 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D982389561D006D2406 /* Owner.swift */; };
+		E8582D9C23895994006D2406 /* DecodableDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D9B23895994006D2406 /* DecodableDataParser.swift */; };
+		E8582D9E23895C08006D2406 /* GithubRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D9D23895C08006D2406 /* GithubRequest.swift */; };
+		E8582DA123895D37006D2406 /* SearchRepoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582DA023895D37006D2406 /* SearchRepoRequest.swift */; };
+		E8582DA723896548006D2406 /* GithubClientDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582DA623896548006D2406 /* GithubClientDependency.swift */; };
+		E8582DAE23896C15006D2406 /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582DAC23896C15006D2406 /* RepoTableViewCell.swift */; };
+		E8582DAF23896C15006D2406 /* RepoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8582DAD23896C15006D2406 /* RepoTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +60,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				E8582D952389558E006D2406 /* APIKit.framework in Embed Frameworks */,
 				E8582D7723855E29006D2406 /* RxCocoa.framework in Embed Frameworks */,
 				E8582D7423855E1C006D2406 /* RxSwift.framework in Embed Frameworks */,
 				E8582D7023855E04006D2406 /* RxRelay.framework in Embed Frameworks */,
@@ -77,6 +92,20 @@
 		E8582D7F2388052A006D2406 /* UiTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UiTableViewModel.swift; sourceTree = "<group>"; };
 		E8582D81238811A8006D2406 /* ExampleUITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITableViewCell.swift; sourceTree = "<group>"; };
 		E8582D82238811A8006D2406 /* ExampleUITableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleUITableViewCell.xib; sourceTree = "<group>"; };
+		E8582D8A23893696006D2406 /* GithubClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubClientViewController.swift; sourceTree = "<group>"; };
+		E8582D8C23893713006D2406 /* GithubClientViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubClientViewModel.swift; sourceTree = "<group>"; };
+		E8582D8E23893783006D2406 /* RepoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoRepository.swift; sourceTree = "<group>"; };
+		E8582D902389554F006D2406 /* GithubApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubApi.swift; sourceTree = "<group>"; };
+		E8582D922389555B006D2406 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		E8582D942389558E006D2406 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
+		E8582D96238955EF006D2406 /* SearchRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepo.swift; sourceTree = "<group>"; };
+		E8582D982389561D006D2406 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		E8582D9B23895994006D2406 /* DecodableDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableDataParser.swift; sourceTree = "<group>"; };
+		E8582D9D23895C08006D2406 /* GithubRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRequest.swift; sourceTree = "<group>"; };
+		E8582DA023895D37006D2406 /* SearchRepoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepoRequest.swift; sourceTree = "<group>"; };
+		E8582DA623896548006D2406 /* GithubClientDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubClientDependency.swift; sourceTree = "<group>"; };
+		E8582DAC23896C15006D2406 /* RepoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
+		E8582DAD23896C15006D2406 /* RepoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepoTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +132,7 @@
 		E8582D25238415F3006D2406 = {
 			isa = PBXGroup;
 			children = (
+				E8582D942389558E006D2406 /* APIKit.framework */,
 				E8582D30238415F3006D2406 /* learning-ios */,
 				E8582D47238415F4006D2406 /* learning-iosTests */,
 				E8582D2F238415F3006D2406 /* Products */,
@@ -122,6 +152,7 @@
 		E8582D30238415F3006D2406 /* learning-ios */ = {
 			isa = PBXGroup;
 			children = (
+				E8582D8923893675006D2406 /* github-client */,
 				E8582D7B238804F2006D2406 /* view */,
 				E8582D6A23855849006D2406 /* counter-mvvm */,
 				E8582D53238416DC006D2406 /* counter */,
@@ -189,6 +220,50 @@
 				E8582D82238811A8006D2406 /* ExampleUITableViewCell.xib */,
 			);
 			path = uitableview;
+			sourceTree = "<group>";
+		};
+		E8582D8923893675006D2406 /* github-client */ = {
+			isa = PBXGroup;
+			children = (
+				E8582D9A2389574D006D2406 /* api */,
+				E8582D8A23893696006D2406 /* GithubClientViewController.swift */,
+				E8582D8C23893713006D2406 /* GithubClientViewModel.swift */,
+				E8582D8E23893783006D2406 /* RepoRepository.swift */,
+				E8582DA623896548006D2406 /* GithubClientDependency.swift */,
+				E8582DAC23896C15006D2406 /* RepoTableViewCell.swift */,
+				E8582DAD23896C15006D2406 /* RepoTableViewCell.xib */,
+			);
+			path = "github-client";
+			sourceTree = "<group>";
+		};
+		E8582D9A2389574D006D2406 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				E8582DA52389616C006D2406 /* response */,
+				E8582D9F23895D0F006D2406 /* request */,
+				E8582D902389554F006D2406 /* GithubApi.swift */,
+				E8582D9B23895994006D2406 /* DecodableDataParser.swift */,
+				E8582D9D23895C08006D2406 /* GithubRequest.swift */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		E8582D9F23895D0F006D2406 /* request */ = {
+			isa = PBXGroup;
+			children = (
+				E8582DA023895D37006D2406 /* SearchRepoRequest.swift */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		E8582DA52389616C006D2406 /* response */ = {
+			isa = PBXGroup;
+			children = (
+				E8582D922389555B006D2406 /* Repo.swift */,
+				E8582D96238955EF006D2406 /* SearchRepo.swift */,
+				E8582D982389561D006D2406 /* Owner.swift */,
+			);
+			path = response;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +353,7 @@
 				E8582D3E238415F4006D2406 /* LaunchScreen.storyboard in Resources */,
 				E8582D3B238415F4006D2406 /* Assets.xcassets in Resources */,
 				E8582D39238415F3006D2406 /* Main.storyboard in Resources */,
+				E8582DAF23896C15006D2406 /* RepoTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +378,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -319,14 +396,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8582D83238811A8006D2406 /* ExampleUITableViewCell.swift in Sources */,
+				E8582D9C23895994006D2406 /* DecodableDataParser.swift in Sources */,
+				E8582D992389561D006D2406 /* Owner.swift in Sources */,
+				E8582DA123895D37006D2406 /* SearchRepoRequest.swift in Sources */,
+				E8582D8F23893783006D2406 /* RepoRepository.swift in Sources */,
 				E8582D7E23880519006D2406 /* UITableViewController.swift in Sources */,
+				E8582D8B23893696006D2406 /* GithubClientViewController.swift in Sources */,
+				E8582D912389554F006D2406 /* GithubApi.swift in Sources */,
 				E8582D36238415F3006D2406 /* ViewController.swift in Sources */,
 				E8582D582384181F006D2406 /* CounterViewController.swift in Sources */,
+				E8582D97238955EF006D2406 /* SearchRepo.swift in Sources */,
+				E8582D932389555B006D2406 /* Repo.swift in Sources */,
 				E8582D802388052A006D2406 /* UiTableViewModel.swift in Sources */,
+				E8582D9E23895C08006D2406 /* GithubRequest.swift in Sources */,
 				E8582D6C23855864006D2406 /* CounterMvvmViewController.swift in Sources */,
 				E8582D32238415F3006D2406 /* AppDelegate.swift in Sources */,
+				E8582DA723896548006D2406 /* GithubClientDependency.swift in Sources */,
+				E8582DAE23896C15006D2406 /* RepoTableViewCell.swift in Sources */,
 				E8582D34238415F3006D2406 /* SceneDelegate.swift in Sources */,
 				E8582D7A23855EC8006D2406 /* CounterViewModel.swift in Sources */,
+				E8582D8D23893713006D2406 /* GithubClientViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

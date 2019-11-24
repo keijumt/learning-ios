@@ -41,6 +41,7 @@
 		E8582DA723896548006D2406 /* GithubClientDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582DA623896548006D2406 /* GithubClientDependency.swift */; };
 		E8582DAE23896C15006D2406 /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582DAC23896C15006D2406 /* RepoTableViewCell.swift */; };
 		E8582DAF23896C15006D2406 /* RepoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8582DAD23896C15006D2406 /* RepoTableViewCell.xib */; };
+		E8582DB3238A1E42006D2406 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582DB2238A1E42006D2406 /* Api.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,7 @@
 		E8582DA623896548006D2406 /* GithubClientDependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubClientDependency.swift; sourceTree = "<group>"; };
 		E8582DAC23896C15006D2406 /* RepoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
 		E8582DAD23896C15006D2406 /* RepoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepoTableViewCell.xib; sourceTree = "<group>"; };
+		E8582DB2238A1E42006D2406 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +246,7 @@
 				E8582D902389554F006D2406 /* GithubApi.swift */,
 				E8582D9B23895994006D2406 /* DecodableDataParser.swift */,
 				E8582D9D23895C08006D2406 /* GithubRequest.swift */,
+				E8582DB2238A1E42006D2406 /* Api.swift */,
 			);
 			path = api;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 				E8582D9E23895C08006D2406 /* GithubRequest.swift in Sources */,
 				E8582D6C23855864006D2406 /* CounterMvvmViewController.swift in Sources */,
 				E8582D32238415F3006D2406 /* AppDelegate.swift in Sources */,
+				E8582DB3238A1E42006D2406 /* Api.swift in Sources */,
 				E8582DA723896548006D2406 /* GithubClientDependency.swift in Sources */,
 				E8582DAE23896C15006D2406 /* RepoTableViewCell.swift in Sources */,
 				E8582D34238415F3006D2406 /* SceneDelegate.swift in Sources */,

@@ -7,12 +7,15 @@
 //
 
 import Foundation
+import APIKit
 
 struct GithubClientDependency {
     static func resolveGithubViewModel() -> GithubClientViewModel {
         return GithubClientViewModel(
             repoRepository: RepoRepositoryImpl(
-                githubApi: GithubApiImpl()
+                githubApi: GithubApiImpl(
+                    api: ApiImpl(session: Session.shared)
+                )
             )
         )
     }

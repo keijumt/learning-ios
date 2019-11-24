@@ -15,18 +15,14 @@ protocol GithubApi {
 }
 
 class GithubApiImpl: GithubApi {
+    
+    private let api: Api
+    
+    init(api: Api) {
+        self.api = api
+    }
+    
     func searchRepo(query: String) -> Single<SearchRepo> {
-        return Single<SearchRepo>.create { singleEvent in
-            Session.send(SearchRepoRequest(query: query)) { result in
-                switch result {
-                case .success(let response):
-                    singleEvent(.success(response))
-                case .failure(let error):
-                    print(error)
-                    singleEvent(.error(error))
-                }
-            }
-            return Disposables.create()
-        }
+        return api.request(request: SearchRepoRequest(query: query))
     }
 }

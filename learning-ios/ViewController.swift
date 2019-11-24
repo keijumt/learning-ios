@@ -15,6 +15,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func didTapViperButton(_ sender: UIButton) {
+        let view = Module1Router.assembleModule1()
+        self.navigationController?.pushViewController(view, animated:true)
+    }
 }
 

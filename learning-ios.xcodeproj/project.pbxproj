@@ -50,6 +50,14 @@
 		E8582DC0238A449C006D2406 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8582D6E23855E04006D2406 /* RxRelay.framework */; };
 		E8582DC2238A46EF006D2406 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8582D7223855E1C006D2406 /* RxSwift.framework */; };
 		E8582DC4238A4774006D2406 /* RepoRepositoryImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582DC3238A4774006D2406 /* RepoRepositoryImplTests.swift */; };
+		E8582DCA238A9458006D2406 /* Module1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582DC8238A9458006D2406 /* Module1ViewController.swift */; };
+		E8582DCB238A9458006D2406 /* Module1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8582DC9238A9458006D2406 /* Module1ViewController.xib */; };
+		E8582DCD238A946B006D2406 /* Module1Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582DCC238A946B006D2406 /* Module1Presenter.swift */; };
+		E8582DD2238A94DF006D2406 /* Module1Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582DD1238A94DF006D2406 /* Module1Router.swift */; };
+		E8582DD5238AA221006D2406 /* Module2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582DD3238AA221006D2406 /* Module2ViewController.swift */; };
+		E8582DD6238AA221006D2406 /* Module2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8582DD4238AA221006D2406 /* Module2ViewController.xib */; };
+		E8582DD8238AA22A006D2406 /* Module2Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582DD7238AA22A006D2406 /* Module2Router.swift */; };
+		E8582DDA238AA234006D2406 /* Module2Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582DD9238AA234006D2406 /* Module2Presenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +128,14 @@
 		E8582DBC238A4484006D2406 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
 		E8582DBE238A448F006D2406 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
 		E8582DC3238A4774006D2406 /* RepoRepositoryImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoRepositoryImplTests.swift; sourceTree = "<group>"; };
+		E8582DC8238A9458006D2406 /* Module1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module1ViewController.swift; sourceTree = "<group>"; };
+		E8582DC9238A9458006D2406 /* Module1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Module1ViewController.xib; sourceTree = "<group>"; };
+		E8582DCC238A946B006D2406 /* Module1Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module1Presenter.swift; sourceTree = "<group>"; };
+		E8582DD1238A94DF006D2406 /* Module1Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module1Router.swift; sourceTree = "<group>"; };
+		E8582DD3238AA221006D2406 /* Module2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module2ViewController.swift; sourceTree = "<group>"; };
+		E8582DD4238AA221006D2406 /* Module2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Module2ViewController.xib; sourceTree = "<group>"; };
+		E8582DD7238AA22A006D2406 /* Module2Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module2Router.swift; sourceTree = "<group>"; };
+		E8582DD9238AA234006D2406 /* Module2Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module2Presenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +188,7 @@
 		E8582D30238415F3006D2406 /* learning-ios */ = {
 			isa = PBXGroup;
 			children = (
+				E8582DC5238A8E44006D2406 /* viper */,
 				E8582D8923893675006D2406 /* github-client */,
 				E8582D7B238804F2006D2406 /* view */,
 				E8582D6A23855849006D2406 /* counter-mvvm */,
@@ -299,6 +316,37 @@
 			path = "github-client";
 			sourceTree = "<group>";
 		};
+		E8582DC5238A8E44006D2406 /* viper */ = {
+			isa = PBXGroup;
+			children = (
+				E8582DC7238A9419006D2406 /* module2 */,
+				E8582DC6238A9410006D2406 /* module1 */,
+			);
+			path = viper;
+			sourceTree = "<group>";
+		};
+		E8582DC6238A9410006D2406 /* module1 */ = {
+			isa = PBXGroup;
+			children = (
+				E8582DC8238A9458006D2406 /* Module1ViewController.swift */,
+				E8582DC9238A9458006D2406 /* Module1ViewController.xib */,
+				E8582DCC238A946B006D2406 /* Module1Presenter.swift */,
+				E8582DD1238A94DF006D2406 /* Module1Router.swift */,
+			);
+			path = module1;
+			sourceTree = "<group>";
+		};
+		E8582DC7238A9419006D2406 /* module2 */ = {
+			isa = PBXGroup;
+			children = (
+				E8582DD3238AA221006D2406 /* Module2ViewController.swift */,
+				E8582DD4238AA221006D2406 /* Module2ViewController.xib */,
+				E8582DD7238AA22A006D2406 /* Module2Router.swift */,
+				E8582DD9238AA234006D2406 /* Module2Presenter.swift */,
+			);
+			path = module2;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -385,9 +433,11 @@
 			files = (
 				E8582D84238811A8006D2406 /* ExampleUITableViewCell.xib in Resources */,
 				E8582D3E238415F4006D2406 /* LaunchScreen.storyboard in Resources */,
+				E8582DCB238A9458006D2406 /* Module1ViewController.xib in Resources */,
 				E8582D3B238415F4006D2406 /* Assets.xcassets in Resources */,
 				E8582D39238415F3006D2406 /* Main.storyboard in Resources */,
 				E8582DAF23896C15006D2406 /* RepoTableViewCell.xib in Resources */,
+				E8582DD6238AA221006D2406 /* Module2ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,8 +502,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8582DCD238A946B006D2406 /* Module1Presenter.swift in Sources */,
 				E8582D83238811A8006D2406 /* ExampleUITableViewCell.swift in Sources */,
 				E8582D9C23895994006D2406 /* DecodableDataParser.swift in Sources */,
+				E8582DD5238AA221006D2406 /* Module2ViewController.swift in Sources */,
 				E8582D992389561D006D2406 /* Owner.swift in Sources */,
 				E8582DA123895D37006D2406 /* SearchRepoRequest.swift in Sources */,
 				E8582D8F23893783006D2406 /* RepoRepository.swift in Sources */,
@@ -462,7 +514,10 @@
 				E8582D912389554F006D2406 /* GithubApi.swift in Sources */,
 				E8582D36238415F3006D2406 /* ViewController.swift in Sources */,
 				E8582D582384181F006D2406 /* CounterViewController.swift in Sources */,
+				E8582DCA238A9458006D2406 /* Module1ViewController.swift in Sources */,
 				E8582D97238955EF006D2406 /* SearchRepo.swift in Sources */,
+				E8582DD8238AA22A006D2406 /* Module2Router.swift in Sources */,
+				E8582DD2238A94DF006D2406 /* Module1Router.swift in Sources */,
 				E8582D932389555B006D2406 /* Repo.swift in Sources */,
 				E8582D802388052A006D2406 /* UiTableViewModel.swift in Sources */,
 				E8582D9E23895C08006D2406 /* GithubRequest.swift in Sources */,
@@ -473,6 +528,7 @@
 				E8582DAE23896C15006D2406 /* RepoTableViewCell.swift in Sources */,
 				E8582D34238415F3006D2406 /* SceneDelegate.swift in Sources */,
 				E8582D7A23855EC8006D2406 /* CounterViewModel.swift in Sources */,
+				E8582DDA238AA234006D2406 /* Module2Presenter.swift in Sources */,
 				E8582D8D23893713006D2406 /* GithubClientViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

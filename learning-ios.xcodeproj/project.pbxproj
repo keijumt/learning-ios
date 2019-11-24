@@ -13,7 +13,6 @@
 		E8582D39238415F3006D2406 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8582D37238415F3006D2406 /* Main.storyboard */; };
 		E8582D3B238415F4006D2406 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8582D3A238415F4006D2406 /* Assets.xcassets */; };
 		E8582D3E238415F4006D2406 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8582D3C238415F4006D2406 /* LaunchScreen.storyboard */; };
-		E8582D49238415F4006D2406 /* learning_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D48238415F4006D2406 /* learning_iosTests.swift */; };
 		E8582D582384181F006D2406 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D562384181F006D2406 /* CounterViewController.swift */; };
 		E8582D6C23855864006D2406 /* CounterMvvmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D6B23855864006D2406 /* CounterMvvmViewController.swift */; };
 		E8582D6F23855E04006D2406 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8582D6E23855E04006D2406 /* RxRelay.framework */; };
@@ -42,6 +41,15 @@
 		E8582DAE23896C15006D2406 /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582DAC23896C15006D2406 /* RepoTableViewCell.swift */; };
 		E8582DAF23896C15006D2406 /* RepoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8582DAD23896C15006D2406 /* RepoTableViewCell.xib */; };
 		E8582DB3238A1E42006D2406 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582DB2238A1E42006D2406 /* Api.swift */; };
+		E8582DB7238A3A11006D2406 /* RepoRepositoryImplSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582DB6238A3A11006D2406 /* RepoRepositoryImplSpec.swift */; };
+		E8582DB9238A3A8B006D2406 /* ApiMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582DB8238A3A8B006D2406 /* ApiMock.swift */; };
+		E8582DBA238A446A006D2406 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8582D942389558E006D2406 /* APIKit.framework */; };
+		E8582DBB238A4476006D2406 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8582D7523855E29006D2406 /* RxCocoa.framework */; };
+		E8582DBD238A4484006D2406 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8582DBC238A4484006D2406 /* RxTest.framework */; };
+		E8582DBF238A448F006D2406 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8582DBE238A448F006D2406 /* RxBlocking.framework */; };
+		E8582DC0238A449C006D2406 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8582D6E23855E04006D2406 /* RxRelay.framework */; };
+		E8582DC2238A46EF006D2406 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8582D7223855E1C006D2406 /* RxSwift.framework */; };
+		E8582DC4238A4774006D2406 /* RepoRepositoryImplTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582DC3238A4774006D2406 /* RepoRepositoryImplTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,7 +89,6 @@
 		E8582D3D238415F4006D2406 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8582D3F238415F4006D2406 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8582D44238415F4006D2406 /* learning-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "learning-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8582D48238415F4006D2406 /* learning_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = learning_iosTests.swift; sourceTree = "<group>"; };
 		E8582D4A238415F4006D2406 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8582D562384181F006D2406 /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CounterViewController.swift; path = ../CounterViewController.swift; sourceTree = "<group>"; };
 		E8582D6B23855864006D2406 /* CounterMvvmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterMvvmViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +115,11 @@
 		E8582DAC23896C15006D2406 /* RepoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
 		E8582DAD23896C15006D2406 /* RepoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepoTableViewCell.xib; sourceTree = "<group>"; };
 		E8582DB2238A1E42006D2406 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		E8582DB6238A3A11006D2406 /* RepoRepositoryImplSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoRepositoryImplSpec.swift; sourceTree = "<group>"; };
+		E8582DB8238A3A8B006D2406 /* ApiMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiMock.swift; sourceTree = "<group>"; };
+		E8582DBC238A4484006D2406 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		E8582DBE238A448F006D2406 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		E8582DC3238A4774006D2406 /* RepoRepositoryImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoRepositoryImplTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +137,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8582DC2238A46EF006D2406 /* RxSwift.framework in Frameworks */,
+				E8582DC0238A449C006D2406 /* RxRelay.framework in Frameworks */,
+				E8582DBF238A448F006D2406 /* RxBlocking.framework in Frameworks */,
+				E8582DBD238A4484006D2406 /* RxTest.framework in Frameworks */,
+				E8582DBB238A4476006D2406 /* RxCocoa.framework in Frameworks */,
+				E8582DBA238A446A006D2406 /* APIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,7 +190,7 @@
 		E8582D47238415F4006D2406 /* learning-iosTests */ = {
 			isa = PBXGroup;
 			children = (
-				E8582D48238415F4006D2406 /* learning_iosTests.swift */,
+				E8582DB4238A39F0006D2406 /* github-client */,
 				E8582D4A238415F4006D2406 /* Info.plist */,
 			);
 			path = "learning-iosTests";
@@ -198,6 +216,8 @@
 		E8582D6D23855E03006D2406 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E8582DBE238A448F006D2406 /* RxBlocking.framework */,
+				E8582DBC238A4484006D2406 /* RxTest.framework */,
 				E8582D7523855E29006D2406 /* RxCocoa.framework */,
 				E8582D7223855E1C006D2406 /* RxSwift.framework */,
 				E8582D6E23855E04006D2406 /* RxRelay.framework */,
@@ -269,6 +289,16 @@
 			path = response;
 			sourceTree = "<group>";
 		};
+		E8582DB4238A39F0006D2406 /* github-client */ = {
+			isa = PBXGroup;
+			children = (
+				E8582DB6238A3A11006D2406 /* RepoRepositoryImplSpec.swift */,
+				E8582DB8238A3A8B006D2406 /* ApiMock.swift */,
+				E8582DC3238A4774006D2406 /* RepoRepositoryImplTests.swift */,
+			);
+			path = "github-client";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -298,6 +328,7 @@
 				E8582D40238415F4006D2406 /* Sources */,
 				E8582D41238415F4006D2406 /* Frameworks */,
 				E8582D42238415F4006D2406 /* Resources */,
+				E8582DC1238A465A006D2406 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -391,6 +422,29 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
 		};
+		E8582DC1238A465A006D2406 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxTest.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -427,7 +481,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8582D49238415F4006D2406 /* learning_iosTests.swift in Sources */,
+				E8582DB7238A3A11006D2406 /* RepoRepositoryImplSpec.swift in Sources */,
+				E8582DB9238A3A8B006D2406 /* ApiMock.swift in Sources */,
+				E8582DC4238A4774006D2406 /* RepoRepositoryImplTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +684,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3PR488S28M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "learning-iosTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -650,6 +710,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3PR488S28M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "learning-iosTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (

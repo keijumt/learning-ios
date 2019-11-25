@@ -58,6 +58,7 @@
 		E8582DD6238AA221006D2406 /* Module2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8582DD4238AA221006D2406 /* Module2ViewController.xib */; };
 		E8582DD8238AA22A006D2406 /* Module2Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582DD7238AA22A006D2406 /* Module2Router.swift */; };
 		E8582DDA238AA234006D2406 /* Module2Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582DD9238AA234006D2406 /* Module2Presenter.swift */; };
+		E8E8E4F5238C0C4100B93906 /* ExampleUICollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E8E4F4238C0C4100B93906 /* ExampleUICollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +137,7 @@
 		E8582DD4238AA221006D2406 /* Module2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Module2ViewController.xib; sourceTree = "<group>"; };
 		E8582DD7238AA22A006D2406 /* Module2Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module2Router.swift; sourceTree = "<group>"; };
 		E8582DD9238AA234006D2406 /* Module2Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module2Presenter.swift; sourceTree = "<group>"; };
+		E8E8E4F4238C0C4100B93906 /* ExampleUICollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUICollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 		E8582D30238415F3006D2406 /* learning-ios */ = {
 			isa = PBXGroup;
 			children = (
+				E8E8E4F3238C0C1A00B93906 /* uicollectionview */,
 				E8582DC5238A8E44006D2406 /* viper */,
 				E8582D8923893675006D2406 /* github-client */,
 				E8582D7B238804F2006D2406 /* view */,
@@ -345,6 +348,14 @@
 				E8582DD9238AA234006D2406 /* Module2Presenter.swift */,
 			);
 			path = module2;
+			sourceTree = "<group>";
+		};
+		E8E8E4F3238C0C1A00B93906 /* uicollectionview */ = {
+			isa = PBXGroup;
+			children = (
+				E8E8E4F4238C0C4100B93906 /* ExampleUICollectionViewController.swift */,
+			);
+			path = uicollectionview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -522,6 +533,7 @@
 				E8582D802388052A006D2406 /* UiTableViewModel.swift in Sources */,
 				E8582D9E23895C08006D2406 /* GithubRequest.swift in Sources */,
 				E8582D6C23855864006D2406 /* CounterMvvmViewController.swift in Sources */,
+				E8E8E4F5238C0C4100B93906 /* ExampleUICollectionViewController.swift in Sources */,
 				E8582D32238415F3006D2406 /* AppDelegate.swift in Sources */,
 				E8582DB3238A1E42006D2406 /* Api.swift in Sources */,
 				E8582DA723896548006D2406 /* GithubClientDependency.swift in Sources */,

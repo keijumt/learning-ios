@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -50,10 +51,19 @@
                                     <action selector="didTapViperButton:" destination="BYZ-38-t0r" eventType="touchDown" id="9Hp-if-Rfb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xyN-55-INs">
+                                <rect key="frame" x="20" y="298" width="116" height="30"/>
+                                <state key="normal" title="UICollectionView"/>
+                                <connections>
+                                    <segue destination="3F7-Ms-d39" kind="show" id="umN-4e-Tk1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="xyN-55-INs" firstAttribute="top" secondItem="hGo-Dk-eAY" secondAttribute="bottom" constant="8" id="3Kc-zm-Ir4"/>
                             <constraint firstItem="tzD-2c-tXT" firstAttribute="leading" secondItem="mB0-4R-kMv" secondAttribute="leading" id="4A4-EZ-4YG"/>
+                            <constraint firstItem="xyN-55-INs" firstAttribute="leading" secondItem="hGo-Dk-eAY" secondAttribute="leading" id="K9n-2l-YEs"/>
                             <constraint firstItem="mB0-4R-kMv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="N7f-xf-FIt"/>
                             <constraint firstItem="hGo-Dk-eAY" firstAttribute="leading" secondItem="kmb-TD-VXo" secondAttribute="leading" id="dLF-f7-BS5"/>
                             <constraint firstItem="mB0-4R-kMv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="l10-76-fOs"/>
@@ -359,6 +369,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Pj-bq-qw1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-10.144927536231885" y="138.61607142857142"/>
+        </scene>
+        <!--ExampleUI Collection View Controller-->
+        <scene sceneID="U0I-GC-tFe">
+            <objects>
+                <viewController id="3F7-Ms-d39" customClass="ExampleUICollectionViewController" customModule="learning_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ziT-g5-G0v">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="u9Z-pM-Sam">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="AaB-Ns-yjd">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="Cell" reuseIdentifier="Cell" id="cU8-9F-Okn">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hQN-Ag-vsb">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="u9Z-pM-Sam" firstAttribute="top" secondItem="AIc-L9-hSK" secondAttribute="top" id="8sE-lj-KIS"/>
+                            <constraint firstItem="AIc-L9-hSK" firstAttribute="trailing" secondItem="u9Z-pM-Sam" secondAttribute="trailing" id="MuY-lt-Vrh"/>
+                            <constraint firstItem="AIc-L9-hSK" firstAttribute="bottom" secondItem="u9Z-pM-Sam" secondAttribute="bottom" id="imi-xD-Cwy"/>
+                            <constraint firstItem="u9Z-pM-Sam" firstAttribute="leading" secondItem="AIc-L9-hSK" secondAttribute="leading" id="rUK-yG-q3Z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AIc-L9-hSK"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TI0-ca-9an"/>
+                    <connections>
+                        <outlet property="uiCollectionView" destination="u9Z-pM-Sam" id="Y87-FR-Stb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Jq-Oq-e3T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1962" y="868"/>
         </scene>
     </scenes>
     <resources>

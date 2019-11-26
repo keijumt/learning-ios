@@ -22,9 +22,6 @@ class ExampleUICollectionViewController: UIViewController {
         
         let layout = UICollectionViewFlowLayout()
         
-        // 周りの余白を設定
-        layout.sectionInset = self.sectionInset
-        
         // アイテムの大きさを設定
         let itemSpacing = self.sectionInset.left * (column - 1)
         let availableWidth = self.view.bounds.width - itemSpacing - (sectionInset.left * 2)
@@ -33,7 +30,6 @@ class ExampleUICollectionViewController: UIViewController {
         // アイテムの垂直方向のスペースを設定
         layout.minimumLineSpacing = sectionInset.left
         
-        layout.headerReferenceSize = CGSize(width: 0, height: 100)
         layout.footerReferenceSize = CGSize(width: 0, height: 100)
         
         self.uiCollectionView.collectionViewLayout = layout
@@ -42,17 +38,39 @@ class ExampleUICollectionViewController: UIViewController {
 
 extension ExampleUICollectionViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        switch section {
+        case 0:
+            return 20
+        case 1:
+            return 5
+        case 2:
+            return 10
+        default:
+            fatalError("section \(section) is not found")
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = self.uiCollectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
-        cell.backgroundColor = .red
+        switch indexPath.section {
+        case 0:
+            cell.backgroundColor = .red
+        case 1:
+            cell.backgroundColor = .green
+        case 2:
+            cell.backgroundColor = .blue
+        default:
+            break
+        }
         return cell
     }
 }
 
 extension ExampleUICollectionViewController: UICollectionViewDelegate {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 3
+    }
+    
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         if kind == UICollectionView.elementKindSectionHeader{
             return self.uiCollectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath)
@@ -61,5 +79,27 @@ extension ExampleUICollectionViewController: UICollectionViewDelegate {
         }
         
         return UICollectionReusableView()
+    }
+}
+
+extension ExampleUICollectionViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        switch section {
+        case 0, 2 :
+            return UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
+        case 1 :
+            return UIEdgeInsets(top: 32, left: 16, bottom: 32, right: 16)
+        default:
+            fatalError("section \(section) is not found")
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        switch section {
+        case 1:
+            return CGSize(width: 0, height: 100)
+        default:
+            return CGSize(width: 0, height: 50)
+        }
     }
 }

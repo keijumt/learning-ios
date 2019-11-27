@@ -34,6 +34,7 @@ class ExampleCustomCellUICollectionViewController: UIViewController {
     
     @IBOutlet weak var customUICollectionView: UICollectionView!
     private let items = (0...30).map{ Item(title: "item:\($0)") }
+    private var dataSource: UICollectionViewDiffableDataSource<Section, Item>!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,9 +42,10 @@ class ExampleCustomCellUICollectionViewController: UIViewController {
         self.customUICollectionView.register(UINib(nibName: "ExampleCustomCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "customCell")
 
         self.customUICollectionView.collectionViewLayout = generateLayout()
-        let dataSource = UICollectionViewDiffableDataSource<Section, Item>(collectionView: self.customUICollectionView) { (collectionView: UICollectionView, indexPath: IndexPath, item: Item) in
+        self.dataSource = UICollectionViewDiffableDataSource<Section, Item>(collectionView: self.customUICollectionView) { (collectionView: UICollectionView, indexPath: IndexPath, item: Item) in
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "customCell", for: indexPath) as! ExampleCustomCollectionViewCell
             cell.backgroundColor = .red
+            cell.exampleLabel.text = item.title
             return cell
         }
         

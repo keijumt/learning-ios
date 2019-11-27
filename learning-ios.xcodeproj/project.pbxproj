@@ -59,6 +59,9 @@
 		E8582DD8238AA22A006D2406 /* Module2Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582DD7238AA22A006D2406 /* Module2Router.swift */; };
 		E8582DDA238AA234006D2406 /* Module2Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582DD9238AA234006D2406 /* Module2Presenter.swift */; };
 		E8E8E4F5238C0C4100B93906 /* ExampleUICollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E8E4F4238C0C4100B93906 /* ExampleUICollectionViewController.swift */; };
+		E8E8E4F8238E911800B93906 /* ExampleCustomCellUICollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E8E4F7238E911800B93906 /* ExampleCustomCellUICollectionViewController.swift */; };
+		E8E8E4FB238E914D00B93906 /* ExampleCustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E8E4F9238E914D00B93906 /* ExampleCustomCollectionViewCell.swift */; };
+		E8E8E4FC238E914D00B93906 /* ExampleCustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8E8E4FA238E914D00B93906 /* ExampleCustomCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +141,9 @@
 		E8582DD7238AA22A006D2406 /* Module2Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module2Router.swift; sourceTree = "<group>"; };
 		E8582DD9238AA234006D2406 /* Module2Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module2Presenter.swift; sourceTree = "<group>"; };
 		E8E8E4F4238C0C4100B93906 /* ExampleUICollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUICollectionViewController.swift; sourceTree = "<group>"; };
+		E8E8E4F7238E911800B93906 /* ExampleCustomCellUICollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCustomCellUICollectionViewController.swift; sourceTree = "<group>"; };
+		E8E8E4F9238E914D00B93906 /* ExampleCustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		E8E8E4FA238E914D00B93906 /* ExampleCustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleCustomCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -353,9 +359,20 @@
 		E8E8E4F3238C0C1A00B93906 /* uicollectionview */ = {
 			isa = PBXGroup;
 			children = (
+				E8E8E4F6238E90E100B93906 /* custom */,
 				E8E8E4F4238C0C4100B93906 /* ExampleUICollectionViewController.swift */,
 			);
 			path = uicollectionview;
+			sourceTree = "<group>";
+		};
+		E8E8E4F6238E90E100B93906 /* custom */ = {
+			isa = PBXGroup;
+			children = (
+				E8E8E4F7238E911800B93906 /* ExampleCustomCellUICollectionViewController.swift */,
+				E8E8E4F9238E914D00B93906 /* ExampleCustomCollectionViewCell.swift */,
+				E8E8E4FA238E914D00B93906 /* ExampleCustomCollectionViewCell.xib */,
+			);
+			path = custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -444,6 +461,7 @@
 			files = (
 				E8582D84238811A8006D2406 /* ExampleUITableViewCell.xib in Resources */,
 				E8582D3E238415F4006D2406 /* LaunchScreen.storyboard in Resources */,
+				E8E8E4FC238E914D00B93906 /* ExampleCustomCollectionViewCell.xib in Resources */,
 				E8582DCB238A9458006D2406 /* Module1ViewController.xib in Resources */,
 				E8582D3B238415F4006D2406 /* Assets.xcassets in Resources */,
 				E8582D39238415F3006D2406 /* Main.storyboard in Resources */,
@@ -527,6 +545,7 @@
 				E8582D582384181F006D2406 /* CounterViewController.swift in Sources */,
 				E8582DCA238A9458006D2406 /* Module1ViewController.swift in Sources */,
 				E8582D97238955EF006D2406 /* SearchRepo.swift in Sources */,
+				E8E8E4F8238E911800B93906 /* ExampleCustomCellUICollectionViewController.swift in Sources */,
 				E8582DD8238AA22A006D2406 /* Module2Router.swift in Sources */,
 				E8582DD2238A94DF006D2406 /* Module1Router.swift in Sources */,
 				E8582D932389555B006D2406 /* Repo.swift in Sources */,
@@ -540,6 +559,7 @@
 				E8582DAE23896C15006D2406 /* RepoTableViewCell.swift in Sources */,
 				E8582D34238415F3006D2406 /* SceneDelegate.swift in Sources */,
 				E8582D7A23855EC8006D2406 /* CounterViewModel.swift in Sources */,
+				E8E8E4FB238E914D00B93906 /* ExampleCustomCollectionViewCell.swift in Sources */,
 				E8582DDA238AA234006D2406 /* Module2Presenter.swift in Sources */,
 				E8582D8D23893713006D2406 /* GithubClientViewModel.swift in Sources */,
 			);

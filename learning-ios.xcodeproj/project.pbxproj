@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B7B9EC2238F6A5B00F2D62B /* ExampleCustomHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7B9EC0238F6A5B00F2D62B /* ExampleCustomHeaderCollectionViewCell.swift */; };
+		5B7B9EC3238F6A5B00F2D62B /* ExampleCustomHeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B7B9EC1238F6A5B00F2D62B /* ExampleCustomHeaderCollectionViewCell.xib */; };
 		E8582D32238415F3006D2406 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D31238415F3006D2406 /* AppDelegate.swift */; };
 		E8582D34238415F3006D2406 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D33238415F3006D2406 /* SceneDelegate.swift */; };
 		E8582D36238415F3006D2406 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D35238415F3006D2406 /* ViewController.swift */; };
@@ -92,6 +94,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5B7B9EC0238F6A5B00F2D62B /* ExampleCustomHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCustomHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
+		5B7B9EC1238F6A5B00F2D62B /* ExampleCustomHeaderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleCustomHeaderCollectionViewCell.xib; sourceTree = "<group>"; };
 		E8582D2E238415F3006D2406 /* learning-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "learning-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8582D31238415F3006D2406 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8582D33238415F3006D2406 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -371,6 +375,8 @@
 				E8E8E4F7238E911800B93906 /* ExampleCustomCellUICollectionViewController.swift */,
 				E8E8E4F9238E914D00B93906 /* ExampleCustomCollectionViewCell.swift */,
 				E8E8E4FA238E914D00B93906 /* ExampleCustomCollectionViewCell.xib */,
+				5B7B9EC0238F6A5B00F2D62B /* ExampleCustomHeaderCollectionViewCell.swift */,
+				5B7B9EC1238F6A5B00F2D62B /* ExampleCustomHeaderCollectionViewCell.xib */,
 			);
 			path = custom;
 			sourceTree = "<group>";
@@ -459,6 +465,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B7B9EC3238F6A5B00F2D62B /* ExampleCustomHeaderCollectionViewCell.xib in Resources */,
 				E8582D84238811A8006D2406 /* ExampleUITableViewCell.xib in Resources */,
 				E8582D3E238415F4006D2406 /* LaunchScreen.storyboard in Resources */,
 				E8E8E4FC238E914D00B93906 /* ExampleCustomCollectionViewCell.xib in Resources */,
@@ -560,6 +567,7 @@
 				E8582D34238415F3006D2406 /* SceneDelegate.swift in Sources */,
 				E8582D7A23855EC8006D2406 /* CounterViewModel.swift in Sources */,
 				E8E8E4FB238E914D00B93906 /* ExampleCustomCollectionViewCell.swift in Sources */,
+				5B7B9EC2238F6A5B00F2D62B /* ExampleCustomHeaderCollectionViewCell.swift in Sources */,
 				E8582DDA238AA234006D2406 /* Module2Presenter.swift in Sources */,
 				E8582D8D23893713006D2406 /* GithubClientViewModel.swift in Sources */,
 			);

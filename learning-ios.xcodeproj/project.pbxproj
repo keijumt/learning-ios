@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5B7B9EC2238F6A5B00F2D62B /* ExampleCustomHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7B9EC0238F6A5B00F2D62B /* ExampleCustomHeaderCollectionViewCell.swift */; };
 		5B7B9EC3238F6A5B00F2D62B /* ExampleCustomHeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B7B9EC1238F6A5B00F2D62B /* ExampleCustomHeaderCollectionViewCell.xib */; };
+		5B7B9EC6238F87CF00F2D62B /* ExampleUIStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7B9EC5238F87CF00F2D62B /* ExampleUIStackViewController.swift */; };
 		E8582D32238415F3006D2406 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D31238415F3006D2406 /* AppDelegate.swift */; };
 		E8582D34238415F3006D2406 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D33238415F3006D2406 /* SceneDelegate.swift */; };
 		E8582D36238415F3006D2406 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D35238415F3006D2406 /* ViewController.swift */; };
@@ -96,6 +97,7 @@
 /* Begin PBXFileReference section */
 		5B7B9EC0238F6A5B00F2D62B /* ExampleCustomHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCustomHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
 		5B7B9EC1238F6A5B00F2D62B /* ExampleCustomHeaderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleCustomHeaderCollectionViewCell.xib; sourceTree = "<group>"; };
+		5B7B9EC5238F87CF00F2D62B /* ExampleUIStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUIStackViewController.swift; sourceTree = "<group>"; };
 		E8582D2E238415F3006D2406 /* learning-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "learning-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8582D31238415F3006D2406 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8582D33238415F3006D2406 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -177,6 +179,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B7B9EC4238F87AD00F2D62B /* uistackview */ = {
+			isa = PBXGroup;
+			children = (
+				5B7B9EC5238F87CF00F2D62B /* ExampleUIStackViewController.swift */,
+			);
+			path = uistackview;
+			sourceTree = "<group>";
+		};
 		E8582D25238415F3006D2406 = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +210,7 @@
 		E8582D30238415F3006D2406 /* learning-ios */ = {
 			isa = PBXGroup;
 			children = (
+				5B7B9EC4238F87AD00F2D62B /* uistackview */,
 				E8E8E4F3238C0C1A00B93906 /* uicollectionview */,
 				E8582DC5238A8E44006D2406 /* viper */,
 				E8582D8923893675006D2406 /* github-client */,
@@ -541,6 +552,7 @@
 				E8582DCD238A946B006D2406 /* Module1Presenter.swift in Sources */,
 				E8582D83238811A8006D2406 /* ExampleUITableViewCell.swift in Sources */,
 				E8582D9C23895994006D2406 /* DecodableDataParser.swift in Sources */,
+				5B7B9EC6238F87CF00F2D62B /* ExampleUIStackViewController.swift in Sources */,
 				E8582DD5238AA221006D2406 /* Module2ViewController.swift in Sources */,
 				E8582D992389561D006D2406 /* Owner.swift in Sources */,
 				E8582DA123895D37006D2406 /* SearchRepoRequest.swift in Sources */,

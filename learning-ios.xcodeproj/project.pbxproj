@@ -10,6 +10,8 @@
 		5B7B9EC2238F6A5B00F2D62B /* ExampleCustomHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7B9EC0238F6A5B00F2D62B /* ExampleCustomHeaderCollectionViewCell.swift */; };
 		5B7B9EC3238F6A5B00F2D62B /* ExampleCustomHeaderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B7B9EC1238F6A5B00F2D62B /* ExampleCustomHeaderCollectionViewCell.xib */; };
 		5B7B9EC6238F87CF00F2D62B /* ExampleUIStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7B9EC5238F87CF00F2D62B /* ExampleUIStackViewController.swift */; };
+		5B7B9ECB2390AEC200F2D62B /* CombineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7B9ECA2390AEC200F2D62B /* CombineViewController.swift */; };
+		5B84E89E2390C487003AA939 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B84E89D2390C487003AA939 /* Item.swift */; };
 		E8582D32238415F3006D2406 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D31238415F3006D2406 /* AppDelegate.swift */; };
 		E8582D34238415F3006D2406 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D33238415F3006D2406 /* SceneDelegate.swift */; };
 		E8582D36238415F3006D2406 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D35238415F3006D2406 /* ViewController.swift */; };
@@ -98,6 +100,8 @@
 		5B7B9EC0238F6A5B00F2D62B /* ExampleCustomHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCustomHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
 		5B7B9EC1238F6A5B00F2D62B /* ExampleCustomHeaderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExampleCustomHeaderCollectionViewCell.xib; sourceTree = "<group>"; };
 		5B7B9EC5238F87CF00F2D62B /* ExampleUIStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUIStackViewController.swift; sourceTree = "<group>"; };
+		5B7B9ECA2390AEC200F2D62B /* CombineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineViewController.swift; sourceTree = "<group>"; };
+		5B84E89D2390C487003AA939 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		E8582D2E238415F3006D2406 /* learning-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "learning-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8582D31238415F3006D2406 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8582D33238415F3006D2406 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -187,6 +191,15 @@
 			path = uistackview;
 			sourceTree = "<group>";
 		};
+		5B7B9EC92390AEB000F2D62B /* combine */ = {
+			isa = PBXGroup;
+			children = (
+				5B7B9ECA2390AEC200F2D62B /* CombineViewController.swift */,
+				5B84E89D2390C487003AA939 /* Item.swift */,
+			);
+			path = combine;
+			sourceTree = "<group>";
+		};
 		E8582D25238415F3006D2406 = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +223,7 @@
 		E8582D30238415F3006D2406 /* learning-ios */ = {
 			isa = PBXGroup;
 			children = (
+				5B7B9EC92390AEB000F2D62B /* combine */,
 				5B7B9EC4238F87AD00F2D62B /* uistackview */,
 				E8E8E4F3238C0C1A00B93906 /* uicollectionview */,
 				E8582DC5238A8E44006D2406 /* viper */,
@@ -567,12 +581,14 @@
 				E8E8E4F8238E911800B93906 /* ExampleCustomCellUICollectionViewController.swift in Sources */,
 				E8582DD8238AA22A006D2406 /* Module2Router.swift in Sources */,
 				E8582DD2238A94DF006D2406 /* Module1Router.swift in Sources */,
+				5B7B9ECB2390AEC200F2D62B /* CombineViewController.swift in Sources */,
 				E8582D932389555B006D2406 /* Repo.swift in Sources */,
 				E8582D802388052A006D2406 /* UiTableViewModel.swift in Sources */,
 				E8582D9E23895C08006D2406 /* GithubRequest.swift in Sources */,
 				E8582D6C23855864006D2406 /* CounterMvvmViewController.swift in Sources */,
 				E8E8E4F5238C0C4100B93906 /* ExampleUICollectionViewController.swift in Sources */,
 				E8582D32238415F3006D2406 /* AppDelegate.swift in Sources */,
+				5B84E89E2390C487003AA939 /* Item.swift in Sources */,
 				E8582DB3238A1E42006D2406 /* Api.swift in Sources */,
 				E8582DA723896548006D2406 /* GithubClientDependency.swift in Sources */,
 				E8582DAE23896C15006D2406 /* RepoTableViewCell.swift in Sources */,

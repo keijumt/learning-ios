@@ -72,6 +72,13 @@
                                     <segue destination="f1p-jr-dRK" kind="show" id="eTd-vx-UXU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vE1-qc-z7e">
+                                <rect key="frame" x="20" y="412" width="62" height="30"/>
+                                <state key="normal" title="Combine"/>
+                                <connections>
+                                    <segue destination="GVQ-FR-Li7" kind="show" id="kzc-0m-RVa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -83,6 +90,8 @@
                             <constraint firstItem="LdP-tB-JV6" firstAttribute="top" secondItem="xt5-7m-9hV" secondAttribute="bottom" constant="8" id="Ig5-AT-8hg"/>
                             <constraint firstItem="xyN-55-INs" firstAttribute="leading" secondItem="hGo-Dk-eAY" secondAttribute="leading" id="K9n-2l-YEs"/>
                             <constraint firstItem="mB0-4R-kMv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="N7f-xf-FIt"/>
+                            <constraint firstItem="vE1-qc-z7e" firstAttribute="top" secondItem="LdP-tB-JV6" secondAttribute="bottom" constant="8" id="cC3-DC-PIb"/>
+                            <constraint firstItem="vE1-qc-z7e" firstAttribute="leading" secondItem="LdP-tB-JV6" secondAttribute="leading" id="cTI-oR-jNS"/>
                             <constraint firstItem="hGo-Dk-eAY" firstAttribute="leading" secondItem="kmb-TD-VXo" secondAttribute="leading" id="dLF-f7-BS5"/>
                             <constraint firstItem="mB0-4R-kMv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="l10-76-fOs"/>
                             <constraint firstItem="MF2-Du-W9E" firstAttribute="top" secondItem="tzD-2c-tXT" secondAttribute="bottom" constant="8" id="m82-oY-47K"/>
@@ -237,6 +246,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q2Q-hH-k9J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1035" y="868"/>
+        </scene>
+        <!--Combine View Controller-->
+        <scene sceneID="xpa-bC-WLy">
+            <objects>
+                <viewController id="GVQ-FR-Li7" customClass="CombineViewController" customModule="learning_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MTX-Y0-4xH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="GYm-3e-9Jq"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lNi-2I-EHX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="80N-e8-jdb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-938" y="-542"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="df9-A6-wSz">

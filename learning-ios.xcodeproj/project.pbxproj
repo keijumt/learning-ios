@@ -12,6 +12,7 @@
 		5B7B9EC6238F87CF00F2D62B /* ExampleUIStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7B9EC5238F87CF00F2D62B /* ExampleUIStackViewController.swift */; };
 		5B7B9ECB2390AEC200F2D62B /* CombineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7B9ECA2390AEC200F2D62B /* CombineViewController.swift */; };
 		5B84E89E2390C487003AA939 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B84E89D2390C487003AA939 /* Item.swift */; };
+		5B84E8C32397416B003AA939 /* ExampleUITabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B84E8C22397416B003AA939 /* ExampleUITabBarViewController.swift */; };
 		E8582D32238415F3006D2406 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D31238415F3006D2406 /* AppDelegate.swift */; };
 		E8582D34238415F3006D2406 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D33238415F3006D2406 /* SceneDelegate.swift */; };
 		E8582D36238415F3006D2406 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D35238415F3006D2406 /* ViewController.swift */; };
@@ -102,6 +103,7 @@
 		5B7B9EC5238F87CF00F2D62B /* ExampleUIStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUIStackViewController.swift; sourceTree = "<group>"; };
 		5B7B9ECA2390AEC200F2D62B /* CombineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineViewController.swift; sourceTree = "<group>"; };
 		5B84E89D2390C487003AA939 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		5B84E8C22397416B003AA939 /* ExampleUITabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITabBarViewController.swift; sourceTree = "<group>"; };
 		E8582D2E238415F3006D2406 /* learning-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "learning-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8582D31238415F3006D2406 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8582D33238415F3006D2406 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -200,6 +202,14 @@
 			path = combine;
 			sourceTree = "<group>";
 		};
+		5B84E8C123974150003AA939 /* uitabbar */ = {
+			isa = PBXGroup;
+			children = (
+				5B84E8C22397416B003AA939 /* ExampleUITabBarViewController.swift */,
+			);
+			path = uitabbar;
+			sourceTree = "<group>";
+		};
 		E8582D25238415F3006D2406 = {
 			isa = PBXGroup;
 			children = (
@@ -283,6 +293,7 @@
 		E8582D7B238804F2006D2406 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				5B84E8C123974150003AA939 /* uitabbar */,
 				E8582D7C238804FF006D2406 /* uitableview */,
 			);
 			path = view;
@@ -578,6 +589,7 @@
 				E8582D582384181F006D2406 /* CounterViewController.swift in Sources */,
 				E8582DCA238A9458006D2406 /* Module1ViewController.swift in Sources */,
 				E8582D97238955EF006D2406 /* SearchRepo.swift in Sources */,
+				5B84E8C32397416B003AA939 /* ExampleUITabBarViewController.swift in Sources */,
 				E8E8E4F8238E911800B93906 /* ExampleCustomCellUICollectionViewController.swift in Sources */,
 				E8582DD8238AA22A006D2406 /* Module2Router.swift in Sources */,
 				E8582DD2238A94DF006D2406 /* Module1Router.swift in Sources */,

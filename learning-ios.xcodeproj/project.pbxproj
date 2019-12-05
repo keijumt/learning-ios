@@ -14,6 +14,7 @@
 		5B84E89E2390C487003AA939 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B84E89D2390C487003AA939 /* Item.swift */; };
 		5B84E8C32397416B003AA939 /* ExampleUITabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B84E8C22397416B003AA939 /* ExampleUITabBarViewController.swift */; };
 		5B84E90023989552003AA939 /* ExampleUserDefaultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B84E8FF23989552003AA939 /* ExampleUserDefaultsViewController.swift */; };
+		5B84E9032398BC0E003AA939 /* NotificationCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B84E9022398BC0E003AA939 /* NotificationCenterViewController.swift */; };
 		E8582D32238415F3006D2406 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D31238415F3006D2406 /* AppDelegate.swift */; };
 		E8582D34238415F3006D2406 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D33238415F3006D2406 /* SceneDelegate.swift */; };
 		E8582D36238415F3006D2406 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D35238415F3006D2406 /* ViewController.swift */; };
@@ -106,6 +107,7 @@
 		5B84E89D2390C487003AA939 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		5B84E8C22397416B003AA939 /* ExampleUITabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITabBarViewController.swift; sourceTree = "<group>"; };
 		5B84E8FF23989552003AA939 /* ExampleUserDefaultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUserDefaultsViewController.swift; sourceTree = "<group>"; };
+		5B84E9022398BC0E003AA939 /* NotificationCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterViewController.swift; sourceTree = "<group>"; };
 		E8582D2E238415F3006D2406 /* learning-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "learning-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8582D31238415F3006D2406 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8582D33238415F3006D2406 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -220,6 +222,14 @@
 			path = userdefaults;
 			sourceTree = "<group>";
 		};
+		5B84E9012398BBF9003AA939 /* notificationcenter */ = {
+			isa = PBXGroup;
+			children = (
+				5B84E9022398BC0E003AA939 /* NotificationCenterViewController.swift */,
+			);
+			path = notificationcenter;
+			sourceTree = "<group>";
+		};
 		E8582D25238415F3006D2406 = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +253,7 @@
 		E8582D30238415F3006D2406 /* learning-ios */ = {
 			isa = PBXGroup;
 			children = (
+				5B84E9012398BBF9003AA939 /* notificationcenter */,
 				5B84E8FE23989533003AA939 /* userdefaults */,
 				5B7B9EC92390AEB000F2D62B /* combine */,
 				5B7B9EC4238F87AD00F2D62B /* uistackview */,
@@ -613,6 +624,7 @@
 				E8E8E4F5238C0C4100B93906 /* ExampleUICollectionViewController.swift in Sources */,
 				E8582D32238415F3006D2406 /* AppDelegate.swift in Sources */,
 				5B84E89E2390C487003AA939 /* Item.swift in Sources */,
+				5B84E9032398BC0E003AA939 /* NotificationCenterViewController.swift in Sources */,
 				E8582DB3238A1E42006D2406 /* Api.swift in Sources */,
 				E8582DA723896548006D2406 /* GithubClientDependency.swift in Sources */,
 				E8582DAE23896C15006D2406 /* RepoTableViewCell.swift in Sources */,

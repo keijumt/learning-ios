@@ -15,6 +15,7 @@
 		5B84E8C32397416B003AA939 /* ExampleUITabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B84E8C22397416B003AA939 /* ExampleUITabBarViewController.swift */; };
 		5B84E90023989552003AA939 /* ExampleUserDefaultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B84E8FF23989552003AA939 /* ExampleUserDefaultsViewController.swift */; };
 		5B84E9032398BC0E003AA939 /* NotificationCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B84E9022398BC0E003AA939 /* NotificationCenterViewController.swift */; };
+		5B84E9052398C979003AA939 /* ExampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B84E9042398C979003AA939 /* ExampleTest.swift */; };
 		E8582D32238415F3006D2406 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D31238415F3006D2406 /* AppDelegate.swift */; };
 		E8582D34238415F3006D2406 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D33238415F3006D2406 /* SceneDelegate.swift */; };
 		E8582D36238415F3006D2406 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8582D35238415F3006D2406 /* ViewController.swift */; };
@@ -108,6 +109,7 @@
 		5B84E8C22397416B003AA939 /* ExampleUITabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITabBarViewController.swift; sourceTree = "<group>"; };
 		5B84E8FF23989552003AA939 /* ExampleUserDefaultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUserDefaultsViewController.swift; sourceTree = "<group>"; };
 		5B84E9022398BC0E003AA939 /* NotificationCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterViewController.swift; sourceTree = "<group>"; };
+		5B84E9042398C979003AA939 /* ExampleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTest.swift; sourceTree = "<group>"; };
 		E8582D2E238415F3006D2406 /* learning-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "learning-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8582D31238415F3006D2406 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8582D33238415F3006D2406 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -279,6 +281,7 @@
 			children = (
 				E8582DB4238A39F0006D2406 /* github-client */,
 				E8582D4A238415F4006D2406 /* Info.plist */,
+				5B84E9042398C979003AA939 /* ExampleTest.swift */,
 			);
 			path = "learning-iosTests";
 			sourceTree = "<group>";
@@ -641,6 +644,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B84E9052398C979003AA939 /* ExampleTest.swift in Sources */,
 				E8582DB7238A3A11006D2406 /* RepoRepositoryImplSpec.swift in Sources */,
 				E8582DB9238A3A8B006D2406 /* ApiMock.swift in Sources */,
 				E8582DC4238A4774006D2406 /* RepoRepositoryImplTests.swift in Sources */,

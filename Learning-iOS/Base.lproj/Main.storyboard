@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="learning_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Learning_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -139,7 +139,7 @@
         <!--Counter View Controller-->
         <scene sceneID="o6e-mJ-QHj">
             <objects>
-                <viewController id="ALw-lr-4sb" customClass="CounterViewController" customModule="learning_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ALw-lr-4sb" customClass="CounterViewController" customModule="Learning_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oY3-I4-val">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -179,7 +179,7 @@
         <!--Table View Controller-->
         <scene sceneID="cij-J4-qtQ">
             <objects>
-                <viewController id="OcH-9f-RpL" customClass="UITableViewController" customModule="learning_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OcH-9f-RpL" customClass="UITableViewController" customModule="Learning_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HVg-HH-My8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -205,7 +205,7 @@
         <!--Example Custom CellUI Collection View Controller-->
         <scene sceneID="Fc5-Ep-xPx">
             <objects>
-                <viewController id="pPL-lw-Z18" customClass="ExampleCustomCellUICollectionViewController" customModule="learning_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pPL-lw-Z18" customClass="ExampleCustomCellUICollectionViewController" customModule="Learning_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RQg-j5-zIe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -243,7 +243,7 @@
         <!--Counter Mvvm View Controller-->
         <scene sceneID="Ole-72-efD">
             <objects>
-                <viewController id="Alp-Pc-290" customClass="CounterMvvmViewController" customModule="learning_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Alp-Pc-290" customClass="CounterMvvmViewController" customModule="Learning_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gRe-x9-qKQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -277,7 +277,7 @@
         <!--Example User Defaults View Controller-->
         <scene sceneID="igs-Dn-zKU">
             <objects>
-                <viewController id="FLE-Gj-CPr" customClass="ExampleUserDefaultsViewController" customModule="learning_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FLE-Gj-CPr" customClass="ExampleUserDefaultsViewController" customModule="Learning_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GNw-qe-U9H">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -332,7 +332,7 @@
         <!--Notification Center View Controller-->
         <scene sceneID="LJ2-ct-XNi">
             <objects>
-                <viewController id="gtn-qv-pI9" customClass="NotificationCenterViewController" customModule="learning_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gtn-qv-pI9" customClass="NotificationCenterViewController" customModule="Learning_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nMe-kk-PWK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -385,7 +385,7 @@
         <!--Combine View Controller-->
         <scene sceneID="xpa-bC-WLy">
             <objects>
-                <viewController id="GVQ-FR-Li7" customClass="CombineViewController" customModule="learning_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GVQ-FR-Li7" customClass="CombineViewController" customModule="Learning_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MTX-Y0-4xH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -536,7 +536,7 @@
         <!--ExampleUI Stack View Controller-->
         <scene sceneID="XOL-EX-Pwu">
             <objects>
-                <viewController id="f1p-jr-dRK" customClass="ExampleUIStackViewController" customModule="learning_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="f1p-jr-dRK" customClass="ExampleUIStackViewController" customModule="Learning_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mpR-my-n3E">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -715,7 +715,7 @@ Label</string>
         <!--Github Client View Controller-->
         <scene sceneID="p3Z-Hw-n9f">
             <objects>
-                <viewController id="3yr-rq-AcR" customClass="GithubClientViewController" customModule="learning_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3yr-rq-AcR" customClass="GithubClientViewController" customModule="Learning_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lZn-Cf-GGo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -782,7 +782,7 @@ Label</string>
         <!--ExampleUI Tab Bar View Controller-->
         <scene sceneID="bUR-je-th2">
             <objects>
-                <tabBarController id="OvC-88-uKy" customClass="ExampleUITabBarViewController" customModule="learning_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="OvC-88-uKy" customClass="ExampleUITabBarViewController" customModule="Learning_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Ow1-e5-Ze0"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Dbm-ma-eh0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -819,7 +819,7 @@ Label</string>
         <!--ExampleUI Collection View Controller-->
         <scene sceneID="U0I-GC-tFe">
             <objects>
-                <viewController id="3F7-Ms-d39" customClass="ExampleUICollectionViewController" customModule="learning_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3F7-Ms-d39" customClass="ExampleUICollectionViewController" customModule="Learning_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ziT-g5-G0v">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StoreItemFullCell" id="gTV-IL-0wX" customClass="StoreItemFullCollectionViewCell" customModule="Learning_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="430" height="245"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="430" height="245"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DzU-8Y-Qid" userLabel="ContentView">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="245"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2E8-B3-Wk7">
+                                <rect key="frame" x="0.0" y="0.0" width="430" height="327"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="3NG-VF-1m1">
+                                        <rect key="frame" x="0.0" y="0.0" width="430" height="61"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best of 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAV-98-hLT">
+                                                <rect key="frame" x="0.0" y="0.0" width="430" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="注目のトレンド: ゲーム" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l9r-QI-0DC">
+                                                <rect key="frame" x="0.0" y="18" width="430" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="進化した名作ゲームたち" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2t-tH-za3">
+                                                <rect key="frame" x="0.0" y="40.5" width="430" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="Ct6-tx-Qgx">
+                                        <rect key="frame" x="0.0" y="69" width="430" height="258"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Ct6-tx-Qgx" secondAttribute="height" multiplier="5:3" id="h5c-TF-rhw"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2E8-B3-Wk7" firstAttribute="top" secondItem="DzU-8Y-Qid" secondAttribute="top" id="bLy-Jm-mMH"/>
+                            <constraint firstAttribute="trailing" secondItem="2E8-B3-Wk7" secondAttribute="trailing" id="kIm-kh-Z0B"/>
+                            <constraint firstItem="2E8-B3-Wk7" firstAttribute="leading" secondItem="DzU-8Y-Qid" secondAttribute="leading" id="uYT-Ck-aP5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="DzU-8Y-Qid" secondAttribute="trailing" id="5co-XB-dOt"/>
+                <constraint firstAttribute="bottom" secondItem="DzU-8Y-Qid" secondAttribute="bottom" id="5dU-8H-ch4"/>
+                <constraint firstItem="DzU-8Y-Qid" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="QEx-G8-FAt"/>
+                <constraint firstItem="DzU-8Y-Qid" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="upA-H1-eav"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="430" height="245"/>
+            <point key="canvasLocation" x="407.24637681159425" y="189.84375"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="avatar" width="539.5" height="540"/>
+    </resources>
+</document>

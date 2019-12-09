@@ -9,6 +9,7 @@ import UIKit
 
 class AppStoreViewController: UIViewController {
     
+    private static let sectionHeaderElementKind = "section-header-element-kind"
     @IBOutlet weak var appStoreCollectionView: UICollectionView!
     
     enum ItemKind: Hashable {
@@ -23,6 +24,7 @@ class AppStoreViewController: UIViewController {
         
         appStoreCollectionView.register(UINib(nibName: "StoreItemCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: StoreItemCollectionViewCell.reuseIdentifier)
         appStoreCollectionView.register(UINib(nibName: "StoreItemFullCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: StoreItemFullCollectionViewCell.reuseIdentifier)
+        appStoreCollectionView.register(UINib(nibName: "StoreTopicHeaderView", bundle: nil), forSupplementaryViewOfKind: AppStoreViewController.sectionHeaderElementKind, withReuseIdentifier: StoreTopicHeaderView.reuseIdentifier)
         
         appStoreCollectionView.collectionViewLayout = generateLayout()
         
@@ -39,6 +41,18 @@ class AppStoreViewController: UIViewController {
                 return cell
             case (_, _):
                 return nil
+            }
+        }
+        
+        dataSource.supplementaryViewProvider = {[weak self] (collectionView: UICollectionView, kind: String, indexPath: IndexPath) -> UICollectionReusableView in
+            guard let section = self?.snapshot.sectionIdentifiers[indexPath.section] else {  fatalError("section not found") }
+            
+            switch section {
+            case is StoreTopicSection:
+                let supplementaryView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: StoreTopicHeaderView.reuseIdentifier, for: indexPath) as! StoreTopicHeaderView
+                return supplementaryView
+            default:
+                fatalError("not implmentation supplementary view")
             }
         }
         
@@ -65,12 +79,22 @@ class AppStoreViewController: UIViewController {
             case is StoreTopicSection:
                 let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalWidth(1/4))
                 let item = NSCollectionLayoutItem(layoutSize: itemSize)
+                item.contentInsets = NSDirectionalEdgeInsets(top: 4, leading: 4, bottom: 4, trailing: 4)
                 
                 let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(14/15), heightDimension: .fractionalWidth(3/5))
                 let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitem: item, count: 3)
                 
+                let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(14/15), heightDimension: .estimated(0))
+                let sectionHeader = NSCollectionLayoutBoundarySupplementaryItem(
+                    layoutSize: headerSize,
+                    elementKind: AppStoreViewController.sectionHeaderElementKind,
+                    alignment: .top
+                )
+                sectionHeader.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 4, bottom: 4, trailing: 4)
+                
                 let section = NSCollectionLayoutSection(group: group)
-                section.orthogonalScrollingBehavior = .groupPaging
+                section.boundarySupplementaryItems = [sectionHeader]
+                section.orthogonalScrollingBehavior = .groupPagingCentered
                 
                 return section
             case is StorePopularitySection:
@@ -80,10 +104,10 @@ class AppStoreViewController: UIViewController {
                 let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(14/15), heightDimension: .fractionalWidth(4/5))
                 let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitem: item, count: 1)
                 
-                group.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8)
+                group.contentInsets = NSDirectionalEdgeInsets(top: 4, leading: 4, bottom: 4, trailing: 4)
                 
                 let section = NSCollectionLayoutSection(group: group)
-                section.orthogonalScrollingBehavior = .groupPaging
+                section.orthogonalScrollingBehavior = .groupPagingCentered
                 
                 return section
             default:

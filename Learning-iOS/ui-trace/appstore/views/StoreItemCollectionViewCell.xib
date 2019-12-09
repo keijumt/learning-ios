@@ -10,24 +10,24 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StoreItemCell" id="xXz-nZ-94f">
-            <rect key="frame" x="0.0" y="0.0" width="709" height="101"/>
+            <rect key="frame" x="0.0" y="0.0" width="709" height="116"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1dQ-Xq-sca">
-                <rect key="frame" x="0.0" y="0.0" width="709" height="101"/>
+                <rect key="frame" x="0.0" y="0.0" width="709" height="116"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xL6-lX-J6V">
-                        <rect key="frame" x="8" y="8" width="693" height="85"/>
+                        <rect key="frame" x="0.0" y="0.0" width="709" height="116"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="uh5-ff-kxc">
-                                <rect key="frame" x="0.0" y="10.5" width="64" height="64"/>
+                                <rect key="frame" x="0.0" y="26" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="nLD-VM-0E2"/>
                                     <constraint firstAttribute="width" constant="64" id="wbx-zn-CxD"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="IVo-KB-tHF">
-                                <rect key="frame" x="72" y="22" width="143" height="41.5"/>
+                                <rect key="frame" x="72" y="37.5" width="143" height="41.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アプリタイトル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXm-tL-XpK">
                                         <rect key="frame" x="0.0" y="0.0" width="143" height="20.5"/>
@@ -44,24 +44,24 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="Qe3-zV-VKt">
-                                <rect key="frame" x="223" y="42.5" width="412" height="0.0"/>
+                                <rect key="frame" x="223" y="58" width="428" height="0.0"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7aw-wr-l8i">
-                                <rect key="frame" x="643" y="0.0" width="50" height="85"/>
+                                <rect key="frame" x="659" y="0.0" width="50" height="116"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="THk-ZV-eyT">
-                                        <rect key="frame" x="25" y="0.0" width="0.0" height="42.5"/>
+                                        <rect key="frame" x="25" y="0.0" width="0.0" height="73.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="251" text="入手" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yx-Q4-qcF">
-                                        <rect key="frame" x="7.5" y="47.5" width="35" height="20.5"/>
+                                        <rect key="frame" x="7.5" y="78.5" width="35" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App内課金" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tz9-SH-IUN">
-                                        <rect key="frame" x="0.0" y="73" width="50" height="12"/>
+                                        <rect key="frame" x="0.0" y="104" width="50" height="12"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -76,14 +76,14 @@
                 </subviews>
                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 <constraints>
-                    <constraint firstItem="xL6-lX-J6V" firstAttribute="top" secondItem="1dQ-Xq-sca" secondAttribute="top" constant="8" id="WwK-rf-tNu"/>
-                    <constraint firstAttribute="trailing" secondItem="xL6-lX-J6V" secondAttribute="trailing" constant="8" id="Xv5-d2-s1H"/>
-                    <constraint firstItem="xL6-lX-J6V" firstAttribute="leading" secondItem="1dQ-Xq-sca" secondAttribute="leading" constant="8" id="YQx-jy-aPl"/>
-                    <constraint firstAttribute="bottom" secondItem="xL6-lX-J6V" secondAttribute="bottom" constant="8" id="sk1-Rk-wfo"/>
+                    <constraint firstItem="xL6-lX-J6V" firstAttribute="top" secondItem="1dQ-Xq-sca" secondAttribute="top" id="WwK-rf-tNu"/>
+                    <constraint firstAttribute="trailing" secondItem="xL6-lX-J6V" secondAttribute="trailing" id="Xv5-d2-s1H"/>
+                    <constraint firstItem="xL6-lX-J6V" firstAttribute="leading" secondItem="1dQ-Xq-sca" secondAttribute="leading" id="YQx-jy-aPl"/>
+                    <constraint firstAttribute="bottom" secondItem="xL6-lX-J6V" secondAttribute="bottom" id="sk1-Rk-wfo"/>
                 </constraints>
             </collectionViewCellContentView>
-            <size key="customSize" width="709" height="114"/>
-            <point key="canvasLocation" x="225.36231884057972" y="537.38839285714278"/>
+            <size key="customSize" width="709" height="129"/>
+            <point key="canvasLocation" x="225.36231884057972" y="541.74107142857144"/>
         </collectionViewCell>
     </objects>
     <resources>

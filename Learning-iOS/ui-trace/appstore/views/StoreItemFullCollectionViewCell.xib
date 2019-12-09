@@ -45,7 +45,7 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="Ct6-tx-Qgx">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="Ct6-tx-Qgx">
                                         <rect key="frame" x="0.0" y="69" width="430" height="258"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Ct6-tx-Qgx" secondAttribute="height" multiplier="5:3" id="h5c-TF-rhw"/>

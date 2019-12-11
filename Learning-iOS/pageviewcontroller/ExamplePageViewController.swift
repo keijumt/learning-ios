@@ -17,12 +17,25 @@ class ExamplePageViewController: UIViewController {
         ]
     }()
     
+    private var currentTabIndex = 0
+    
+    @IBOutlet weak var tabBarCollectionView: UICollectionView! {
+        didSet {
+            tabBarCollectionView.showsHorizontalScrollIndicator = false
+            tabBarCollectionView.showsVerticalScrollIndicator = false
+        }
+    }
     @IBOutlet weak var containerView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tabBarCollectionView.register(UINib(nibName: "ExamplePageTabCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "TabBarCell")
+        tabBarCollectionView.dataSource = self
+        tabBarCollectionView.delegate = self
+        
         page.dataSource = self
+        page.delegate = self
         
         page.setViewControllers([pages[0]], direction: .forward, animated: true, completion: nil)
         
@@ -36,9 +49,52 @@ class ExamplePageViewController: UIViewController {
         page.view.bottomAnchor.constraint(equalTo: superview.bottomAnchor).isActive = true
         page.view.trailingAnchor.constraint(equalTo: superview.trailingAnchor).isActive = true
         page.didMove(toParent: self)
+        
+        tabBarCollectionView.reloadData()
+        updateLayout()
+    }
+    
+    private func updateLayout() {
+        let flowLayout = tabBarCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        let itemSize = CGSize(width: tabBarCollectionView.bounds.width / CGFloat(pages.count), height: tabBarCollectionView.bounds.height)
+        flowLayout.itemSize = itemSize
+        flowLayout.sectionInset = .zero
+        flowLayout.minimumLineSpacing = 0
+        flowLayout.minimumInteritemSpacing = 0
+        tabBarCollectionView.collectionViewLayout = flowLayout
     }
 }
 
+extension ExamplePageViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return pages.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = tabBarCollectionView.dequeueReusableCell(withReuseIdentifier: "TabBarCell", for: indexPath)
+        if indexPath.row == currentTabIndex {
+            cell.backgroundColor = .red
+        } else {
+            cell.backgroundColor = .systemBackground
+        }
+        return cell
+    }
+}
+
+extension ExamplePageViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let nextIndex = indexPath.row
+        let nextViewController = pages[nextIndex]
+        let direction: UIPageViewController.NavigationDirection = currentTabIndex < nextIndex ? .forward: .reverse
+        page.setViewControllers([nextViewController], direction: direction, animated: true) { [weak self] finished in
+            guard finished else {
+                return
+            }
+            self?.currentTabIndex = nextIndex
+            self?.tabBarCollectionView.reloadData()
+        }
+    }
+}
 
 extension ExamplePageViewController: UIPageViewControllerDataSource {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
@@ -53,5 +109,19 @@ extension ExamplePageViewController: UIPageViewControllerDataSource {
     
     func presentationCount(for pageViewController: UIPageViewController) -> Int {
         return pages.count
+    }
+}
+
+extension ExamplePageViewController: UIPageViewControllerDelegate {
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        print(completed)
+        guard completed else {
+            return
+        }
+        
+        guard let currentViewController = pages.first(where: {pageViewController.viewControllers?.first == $0}) else { return }
+        guard let index = pages.firstIndex(of: currentViewController) else { return }
+        currentTabIndex = index
+        tabBarCollectionView.reloadData()
     }
 }

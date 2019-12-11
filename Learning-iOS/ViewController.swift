@@ -25,4 +25,9 @@ class ViewController: UIViewController {
         let controller = storyboard.instantiateViewController(withIdentifier: "UITraceViewController") as! UITraceViewController
         navigationController?.pushViewController(controller, animated: true)
     }
+    
+    @IBAction func didTapPageViewController(_ sender: Any) {
+        let controller = ExamplePageViewController(nibName: "ExamplePageViewController", bundle: nil)
+        navigationController?.pushViewController(controller, animated: true)
+    }
 }

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExamplePageViewController" customModule="Learning_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="tCv-W1-VFD" id="p7N-Wy-xKn"/>
+                <outlet property="tabBarCollectionView" destination="0iU-Bz-5md" id="sPs-r8-1dY"/>
+                <outlet property="view" destination="iN0-l3-epB" id="k25-b8-UMY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="0iU-Bz-5md">
+                    <rect key="frame" x="0.0" y="44" width="414" height="48"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="z4x-4r-j3h"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="wK7-oi-mfg">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tCv-W1-VFD">
+                    <rect key="frame" x="0.0" y="92" width="414" height="770"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tCv-W1-VFD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="0tV-2M-8KS"/>
+                <constraint firstItem="0iU-Bz-5md" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="5QX-Os-h55"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="tCv-W1-VFD" secondAttribute="trailing" id="73g-Ph-QcJ"/>
+                <constraint firstItem="tCv-W1-VFD" firstAttribute="top" secondItem="0iU-Bz-5md" secondAttribute="bottom" id="77E-61-WSX"/>
+                <constraint firstItem="0iU-Bz-5md" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="DHz-68-75Q"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0iU-Bz-5md" secondAttribute="trailing" id="beL-hQ-jYw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="tCv-W1-VFD" secondAttribute="bottom" id="h7L-96-4kY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="132" y="154"/>
+        </view>
+    </objects>
+</document>

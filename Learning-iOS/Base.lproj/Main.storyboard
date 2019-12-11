@@ -127,7 +127,7 @@
                                 <rect key="frame" x="20" y="602" width="148" height="30"/>
                                 <state key="normal" title="PagingViewController"/>
                                 <connections>
-                                    <segue destination="of8-gE-Szk" kind="show" id="YVE-aI-9bp"/>
+                                    <action selector="didTapPageViewController:" destination="BYZ-38-t0r" eventType="touchDown" id="Eel-ux-15c"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -745,37 +745,6 @@ Label</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GF4-dB-rhu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="905.79710144927549" y="-556.47321428571422"/>
-        </scene>
-        <!--Example Page View Controller-->
-        <scene sceneID="g65-S6-g06">
-            <objects>
-                <viewController id="of8-gE-Szk" customClass="ExamplePageViewController" customModule="Learning_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="SZg-TM-qZx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tUm-wM-Dvq">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="tUm-wM-Dvq" firstAttribute="leading" secondItem="yE5-8G-6Ze" secondAttribute="leading" id="Dcp-9L-RGk"/>
-                            <constraint firstItem="yE5-8G-6Ze" firstAttribute="bottom" secondItem="tUm-wM-Dvq" secondAttribute="bottom" id="mnk-Wq-uSO"/>
-                            <constraint firstItem="tUm-wM-Dvq" firstAttribute="top" secondItem="yE5-8G-6Ze" secondAttribute="top" id="oaJ-72-VH3"/>
-                            <constraint firstItem="yE5-8G-6Ze" firstAttribute="trailing" secondItem="tUm-wM-Dvq" secondAttribute="trailing" id="qNX-Gz-g8z"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="yE5-8G-6Ze"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="zHd-2u-KbL"/>
-                    <connections>
-                        <outlet property="containerView" destination="tUm-wM-Dvq" id="CPf-fM-O6Z"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HSl-US-F4F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1867" y="-576"/>
         </scene>
         <!--Github Client View Controller-->
         <scene sceneID="p3Z-Hw-n9f">

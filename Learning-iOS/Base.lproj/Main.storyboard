@@ -130,6 +130,13 @@
                                     <action selector="didTapPageViewController:" destination="BYZ-38-t0r" eventType="touchDown" id="Eel-ux-15c"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D07-Uh-I87">
+                                <rect key="frame" x="20" y="640" width="129" height="30"/>
+                                <state key="normal" title="SegmentedControl"/>
+                                <connections>
+                                    <segue destination="BiC-IR-Kbd" kind="show" id="DYT-my-Ddy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -137,10 +144,12 @@
                             <constraint firstItem="xt5-7m-9hV" firstAttribute="leading" secondItem="xyN-55-INs" secondAttribute="leading" id="0ZL-Pf-bZp"/>
                             <constraint firstItem="nzb-C8-ccS" firstAttribute="leading" secondItem="FgV-nL-DMz" secondAttribute="leading" id="1g9-h0-Fti"/>
                             <constraint firstItem="FgV-nL-DMz" firstAttribute="leading" secondItem="dki-rm-6Ll" secondAttribute="leading" id="1lU-gq-Bdb"/>
+                            <constraint firstItem="D07-Uh-I87" firstAttribute="top" secondItem="nzb-C8-ccS" secondAttribute="bottom" constant="8" id="1ln-ef-H6O"/>
                             <constraint firstItem="xyN-55-INs" firstAttribute="top" secondItem="hGo-Dk-eAY" secondAttribute="bottom" constant="8" id="3Kc-zm-Ir4"/>
                             <constraint firstItem="tzD-2c-tXT" firstAttribute="leading" secondItem="mB0-4R-kMv" secondAttribute="leading" id="4A4-EZ-4YG"/>
                             <constraint firstItem="dki-rm-6Ll" firstAttribute="top" secondItem="zib-8S-Tkv" secondAttribute="bottom" constant="8" id="7ZQ-oO-i6g"/>
                             <constraint firstItem="dki-rm-6Ll" firstAttribute="leading" secondItem="zib-8S-Tkv" secondAttribute="leading" id="9DH-lp-trK"/>
+                            <constraint firstItem="D07-Uh-I87" firstAttribute="leading" secondItem="nzb-C8-ccS" secondAttribute="leading" id="AIf-vO-Osf"/>
                             <constraint firstItem="zib-8S-Tkv" firstAttribute="leading" secondItem="W4c-Ew-Gs8" secondAttribute="leading" id="AXQ-jV-OLE"/>
                             <constraint firstItem="LdP-tB-JV6" firstAttribute="leading" secondItem="xt5-7m-9hV" secondAttribute="leading" id="Eu5-9P-qTG"/>
                             <constraint firstItem="W4c-Ew-Gs8" firstAttribute="leading" secondItem="vE1-qc-z7e" secondAttribute="leading" id="F1p-BM-ceF"/>
@@ -745,6 +754,51 @@ Label</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GF4-dB-rhu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="905.79710144927549" y="-556.47321428571422"/>
+        </scene>
+        <!--Segmented View Controller-->
+        <scene sceneID="pyG-BB-uQj">
+            <objects>
+                <viewController id="BiC-IR-Kbd" customClass="SegmentedViewController" customModule="Learning_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i58-gB-u4T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bwv-wk-4xd">
+                                <rect key="frame" x="16" y="120" width="382" height="32"/>
+                                <segments>
+                                    <segment title="ページ1"/>
+                                    <segment title="ページ2"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControlValueChanged:" destination="BiC-IR-Kbd" eventType="valueChanged" id="yF1-v5-8Cx"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZTC-JB-cve">
+                                <rect key="frame" x="0.0" y="151" width="414" height="711"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bwv-wk-4xd" firstAttribute="top" secondItem="D1P-o8-Z0F" secondAttribute="top" constant="32" id="50g-O7-m7l"/>
+                            <constraint firstItem="bwv-wk-4xd" firstAttribute="leading" secondItem="D1P-o8-Z0F" secondAttribute="leading" constant="16" id="GEe-es-Qhh"/>
+                            <constraint firstItem="D1P-o8-Z0F" firstAttribute="trailing" secondItem="ZTC-JB-cve" secondAttribute="trailing" id="KMs-AU-UQh"/>
+                            <constraint firstItem="D1P-o8-Z0F" firstAttribute="bottom" secondItem="ZTC-JB-cve" secondAttribute="bottom" id="crN-Kd-pfV"/>
+                            <constraint firstItem="D1P-o8-Z0F" firstAttribute="trailing" secondItem="bwv-wk-4xd" secondAttribute="trailing" constant="16" id="s3u-Xj-cra"/>
+                            <constraint firstItem="ZTC-JB-cve" firstAttribute="top" secondItem="bwv-wk-4xd" secondAttribute="bottom" id="vFA-t1-IpH"/>
+                            <constraint firstItem="ZTC-JB-cve" firstAttribute="leading" secondItem="D1P-o8-Z0F" secondAttribute="leading" id="yLr-JC-je0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="D1P-o8-Z0F"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="iah-Re-fte"/>
+                    <connections>
+                        <outlet property="containerView" destination="ZTC-JB-cve" id="QjW-rL-Qqg"/>
+                        <outlet property="segmentedControl" destination="bwv-wk-4xd" id="KhO-vu-WEI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Nv-QR-YcH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1906" y="-556"/>
         </scene>
         <!--Github Client View Controller-->
         <scene sceneID="p3Z-Hw-n9f">

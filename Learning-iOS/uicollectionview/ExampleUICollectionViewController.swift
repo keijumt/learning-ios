@@ -54,7 +54,7 @@ extension ExampleUICollectionViewController: UICollectionViewDataSource {
         let cell = self.uiCollectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
         switch indexPath.section {
         case 0:
-            cell.backgroundColor = .red
+            cell.backgroundColor = Asset.Colors.colorPrimary.color
         case 1:
             cell.backgroundColor = .green
         case 2:
